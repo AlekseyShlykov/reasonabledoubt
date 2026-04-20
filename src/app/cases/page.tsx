@@ -75,12 +75,12 @@ export default function CasesPage() {
       let session = getSession();
       if (!session) {
         session = createSession(locale);
-        await createOrUpdateSession(
-          session.sessionId,
-          locale,
-          typeof window !== 'undefined' ? window.navigator.userAgent : undefined
-        );
       }
+      await createOrUpdateSession(
+        session.sessionId,
+        locale,
+        typeof window !== 'undefined' ? window.navigator.userAgent : undefined
+      );
 
       if (session.roundIndex >= TOTAL_ROUNDS) {
         await markCompleted(session.sessionId);

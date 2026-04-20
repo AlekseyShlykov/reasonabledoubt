@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loadTranslations, getStoredLocale, t } from '@/lib/i18n';
 import { getSession, clearSession, TOTAL_ROUNDS } from '@/lib/storage';
-import { getCaseStatisticsDetailed } from '@/lib/supabase';
+import { getCaseStatisticsDetailed, isSupabaseConfigured } from '@/lib/supabase';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommunityVoteBars from '@/components/CommunityVoteBars';
@@ -69,6 +69,12 @@ export default function ResultsPage() {
             <p className="text-sm sm:text-lg text-gray-300">{t('results.thankYou')}</p>
           </div>
 
+          {!isSupabaseConfigured() && (
+            <div className="border border-amber-800/70 bg-amber-950/40 text-amber-100 text-sm px-4 py-3 font-mono">
+              {t('results.supabaseNotConfigured')}
+            </div>
+          )}
+
           {statsLoadError && (
             <div className="border border-red-900/60 bg-red-950/30 text-red-200 text-sm px-4 py-3 font-mono">
               {t('results.statsFailed', { message: statsLoadError })}
@@ -106,7 +112,9 @@ export default function ResultsPage() {
                     <CommunityVoteBars
                       guilty={caseStats.guilty}
                       notGuilty={caseStats.notGuilty}
-                      showEmptyHint={!statsLoadError && total === 0}
+                      showEmptyHint={
+                        isSupabaseConfigured() && !statsLoadError && total === 0
+                      }
                     />
                   </div>
                 );

@@ -80,7 +80,8 @@
     "noCommunityData": "No votes in the database for this case yet. After players complete rounds, percentages appear here.",
     "communityVotesTitle": "All players (database)",
     "voteCount": "Votes: {{n}}",
-    "statsFailed": "Could not load community stats: {{message}}"
+    "statsFailed": "Could not load community stats: {{message}}",
+    "supabaseNotConfigured": "Community stats are unavailable: this GitHub Pages build was produced without NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY. Add both as repository Actions secrets and redeploy."
   },
   "admin": {
     "title": "Admin Panel",

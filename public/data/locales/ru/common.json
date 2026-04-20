@@ -1,5 +1,5 @@
 {
-  "title": "Разумное Сомнение",
+  "title": "Разумное cомнение",
   "start": "Начать",
   "skipIntro": "Пропустить интро",
   "tapToRevealIntro": "Нажмите на текст — он появится целиком",
@@ -34,7 +34,7 @@
     "cases": "Дела"
   },
   "footer": {
-    "createdBy": "Создано Алексеем Шлыковым",
+    "createdBy": "Сделал Алексей Шлыков",
     "website": "https://buildtounderstand.dev/"
   },
   "cases": {
@@ -73,14 +73,15 @@
     "notGuilty": "Не виновен",
     "yourDecision": "Ваше решение",
     "communityDecision": "Решение сообщества",
-    "visitWebsite": "Посетить сайт создателя",
+    "visitWebsite": "Посетить сайт автора с другими играми",
     "loading": "Загрузка…",
     "caseLabel": "Дело",
     "round": "раунд",
     "noCommunityData": "В базе пока нет голосов по этому делу. Когда другие игроки пройдут игру, здесь появятся проценты.",
     "communityVotesTitle": "Все игроки (база данных)",
     "voteCount": "Голосов: {{n}}",
-    "statsFailed": "Не удалось загрузить статистику: {{message}}"
+    "statsFailed": "Не удалось загрузить статистику: {{message}}",
+    "supabaseNotConfigured": "Статистика «все игроки» недоступна: в сборке GitHub Pages не были заданы NEXT_PUBLIC_SUPABASE_URL и NEXT_PUBLIC_SUPABASE_ANON_KEY. Добавьте их в секреты репозитория и перезапустите деплой."
   },
   "admin": {
     "title": "Панель администратора",

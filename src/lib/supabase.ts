@@ -8,6 +8,11 @@ export const supabase = supabaseUrl && supabaseAnonKey
   ? createClient(supabaseUrl, supabaseAnonKey)
   : null;
 
+/** True when URL and anon key were present at build time (static export bakes these in). */
+export function isSupabaseConfigured(): boolean {
+  return Boolean(supabaseUrl && supabaseAnonKey);
+}
+
 export interface VerdictSession {
   id: string;
   created_at: string;
@@ -48,19 +53,28 @@ export async function createOrUpdateSession(
   }
   
   try {
-    const { data: existing } = await supabase
+    const { data: existing, error: selectError } = await supabase
       .from('verdict_sessions')
       .select('id')
       .eq('id', sessionId)
-      .single();
+      .maybeSingle();
 
-    if (!existing) {
-      await supabase.from('verdict_sessions').insert({
-        id: sessionId,
-        locale,
-        user_agent: userAgent,
-        completed: false,
-      });
+    if (selectError) {
+      console.error('createOrUpdateSession select:', selectError);
+      return;
+    }
+
+    if (existing) return;
+
+    const { error: insertError } = await supabase.from('verdict_sessions').insert({
+      id: sessionId,
+      locale,
+      user_agent: userAgent,
+      completed: false,
+    });
+
+    if (insertError) {
+      console.error('createOrUpdateSession insert:', insertError);
     }
   } catch (error) {
     console.error('Error creating/updating session:', error);
@@ -88,13 +102,17 @@ export async function updateVerdict(
     const caseKey = `case${roundNumber}_verdict` as keyof VerdictSession;
     const timeKey = `case${roundNumber}_time_ms` as keyof VerdictSession;
 
-    await supabase
+    const { error } = await supabase
       .from('verdict_sessions')
       .update({
         [caseKey]: verdict,
         [timeKey]: timeMs,
       })
       .eq('id', sessionId);
+
+    if (error) {
+      console.error('updateVerdict:', error);
+    }
   } catch (error) {
     console.error('Error updating verdict:', error);
   }
@@ -111,11 +129,15 @@ export async function recordCaseVote(
   }
 
   try {
-    await supabase.from('case_votes').insert({
+    const { error } = await supabase.from('case_votes').insert({
       case_id: caseId,
       verdict,
       session_id: sessionId,
     });
+
+    if (error) {
+      console.error('recordCaseVote:', error);
+    }
   } catch (error) {
     console.error('Error recording case vote:', error);
   }
@@ -134,7 +156,11 @@ export async function getCaseVoteStats(
       .select('verdict')
       .eq('case_id', caseId);
 
-    if (error || !data) {
+    if (error) {
+      console.error('getCaseVoteStats:', error);
+      return { guilty: 0, notGuilty: 0 };
+    }
+    if (!data) {
       return { guilty: 0, notGuilty: 0 };
     }
 
@@ -158,13 +184,17 @@ export async function markCompleted(sessionId: string): Promise<void> {
   }
   
   try {
-    await supabase
+    const { error } = await supabase
       .from('verdict_sessions')
       .update({
         completed: true,
         completed_at: new Date().toISOString(),
       })
       .eq('id', sessionId);
+
+    if (error) {
+      console.error('markCompleted:', error);
+    }
   } catch (error) {
     console.error('Error marking completed:', error);
   }
