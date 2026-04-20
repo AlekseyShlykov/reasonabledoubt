@@ -43,26 +43,26 @@ function TutorialCell({
 
 export default function CaseGrid({ content, logic, tutorialHighlight = null }: CaseGridProps) {
   return (
-    <div className="relative flex-1 min-h-0 grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-2 sm:gap-3">
+    <div className="relative w-full grid grid-cols-1 gap-2 sm:gap-3 lg:flex-1 lg:min-h-0 lg:grid-cols-2 lg:grid-rows-2">
       <TutorialCell index={0} highlight={tutorialHighlight}>
-        <section className="min-h-0 flex flex-1 flex-col bg-surface border border-bg-border p-3 sm:p-4 overflow-y-auto">
+        <section className="min-h-0 flex max-lg:flex-none flex-1 flex-col bg-surface border border-bg-border p-3 sm:p-4 max-lg:overflow-visible lg:overflow-y-auto">
           <h2 className="text-sm sm:text-base font-mono cyan-text mb-2 flex-shrink-0">
             {t('cases.humanProfile')}
           </h2>
           <div className="text-xs text-gray-400 mb-1 flex-shrink-0">{t('cases.lifeHistory')}</div>
-          <p className="text-xs sm:text-sm leading-relaxed text-gray-300 whitespace-pre-line">
+          <p className="text-sm leading-[1.65] text-gray-300 whitespace-pre-line">
             {content.humanHistory}
           </p>
         </section>
       </TutorialCell>
 
       <TutorialCell index={1} highlight={tutorialHighlight}>
-        <section className="min-h-0 flex flex-1 flex-col overflow-hidden">
-          <div className="bg-surface border border-bg-border p-2 flex-1 min-h-0 flex flex-col overflow-hidden">
+        <section className="min-h-0 flex max-lg:flex-none flex-1 flex-col max-lg:overflow-visible lg:overflow-hidden">
+          <div className="bg-surface border border-bg-border p-2 flex max-lg:flex-none flex-1 min-h-0 flex-col max-lg:overflow-visible lg:overflow-hidden">
             <h3 className="text-[11px] sm:text-xs font-mono cyan-text mb-1.5 flex-shrink-0 leading-none">
               {t('cases.coefficients')}
             </h3>
-            <div className="grid min-h-0 flex-1 grid-cols-3 grid-rows-1 gap-1 sm:gap-1.5 auto-rows-fr">
+            <div className="grid min-h-0 max-lg:flex-none flex-1 grid-cols-3 grid-rows-1 gap-1 sm:gap-1.5 max-lg:auto-rows-auto lg:auto-rows-fr">
               <MetricCard
                 compact
                 label={t('cases.social')}
@@ -90,7 +90,7 @@ export default function CaseGrid({ content, logic, tutorialHighlight = null }: C
       </TutorialCell>
 
       <TutorialCell index={2} highlight={tutorialHighlight}>
-        <section className="min-h-0 flex flex-1 flex-col overflow-hidden">
+        <section className="min-h-0 flex max-lg:flex-none flex-1 flex-col max-lg:overflow-visible lg:overflow-hidden">
           <AIPrediction
             prediction={content.aiPrediction}
             probability={logic.predictionProbability}
@@ -100,7 +100,7 @@ export default function CaseGrid({ content, logic, tutorialHighlight = null }: C
       </TutorialCell>
 
       <TutorialCell index={3} highlight={tutorialHighlight}>
-        <section className="min-h-0 flex flex-1 flex-col overflow-hidden">
+        <section className="min-h-0 flex max-lg:flex-none flex-1 flex-col max-lg:overflow-visible lg:overflow-hidden">
           <AIAnalysisViz
             factors={logic.aiFactors}
             impact={logic.expectedImpact.harmedPeople}

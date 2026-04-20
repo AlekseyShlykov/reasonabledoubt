@@ -215,8 +215,8 @@ export default function CasesPage() {
     <div className="h-dvh flex flex-col overflow-hidden bg-dark-bg">
       <Header currentRound={currentRoundDisplay} totalRounds={TOTAL_ROUNDS} compact />
 
-      <main className="flex-1 min-h-0 flex flex-col px-2 py-2 sm:px-4 sm:py-3">
-        <div className="max-w-7xl mx-auto w-full flex-1 min-h-0 flex flex-col gap-2 relative">
+      <main className="flex-1 min-h-0 flex flex-col overflow-y-auto px-2 py-2 sm:px-4 sm:py-3">
+        <div className="max-w-7xl mx-auto w-full flex flex-col gap-2 relative lg:flex-1 lg:min-h-0">
           <CaseGrid content={content} logic={logic} tutorialHighlight={tutorialStep} />
 
           {tutorialStep !== null && (

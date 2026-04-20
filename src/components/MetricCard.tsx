@@ -21,8 +21,11 @@ export default function MetricCard({ label, value, trend, sparkline, compact }: 
   if (compact) {
     return (
       <div className="min-h-0 min-w-0 flex flex-col bg-dark-bg/50 border border-bg-border p-1 sm:p-1.5">
-        <div className="flex justify-between items-center gap-0.5 mb-0.5">
-          <span className="text-[10px] sm:text-[11px] text-gray-400 truncate leading-tight" title={label}>
+        <div className="mb-0.5 flex items-start justify-between gap-1">
+          <span
+            className="min-w-0 text-[11px] leading-snug text-gray-400 max-lg:break-words sm:text-[11px] lg:truncate"
+            title={label}
+          >
             {label}
           </span>
           <span className={`text-[10px] shrink-0 tabular-nums ${trendColor}`}>
