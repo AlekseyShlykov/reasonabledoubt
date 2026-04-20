@@ -3,7 +3,7 @@
 import { t } from '@/lib/i18n';
 
 interface AIAnalysisVizProps {
-  factors: Array<{ name: string; weight: number }>;
+  factors: Array<{ key: string; weight: number }>;
   impact: { min: number; max: number };
   severity: number;
 }
@@ -20,27 +20,30 @@ export default function AIAnalysisViz({ factors, impact, severity }: AIAnalysisV
           {t('cases.factorContribution')}
         </div>
         <div className="min-h-0 flex max-lg:flex-none flex-col gap-1 overflow-hidden max-lg:overflow-visible sm:gap-1">
-          {factors.map((factor, i) => (
-            <div key={i} className="min-w-0 shrink-0">
-              <div className="mb-0.5 flex flex-col gap-0.5 sm:mb-px sm:flex-row sm:items-baseline sm:justify-between sm:gap-1">
-                <span
-                  className="min-w-0 text-[11px] leading-snug text-gray-400 max-lg:break-words max-lg:whitespace-normal lg:truncate lg:leading-tight"
-                  title={factor.name}
-                >
-                  {factor.name}
-                </span>
-                <span className="cyan-text shrink-0 text-right text-[11px] tabular-nums sm:self-baseline">
-                  {(factor.weight * 100).toFixed(0)}%
-                </span>
+          {factors.map((factor, i) => {
+            const label = t(`aiFactorLabels.${factor.key}`);
+            return (
+              <div key={i} className="min-w-0 shrink-0">
+                <div className="mb-0.5 flex flex-col gap-0.5 sm:mb-px sm:flex-row sm:items-baseline sm:justify-between sm:gap-1">
+                  <span
+                    className="min-w-0 text-[11px] leading-snug text-gray-400 max-lg:break-words max-lg:whitespace-normal lg:truncate lg:leading-tight"
+                    title={label}
+                  >
+                    {label}
+                  </span>
+                  <span className="cyan-text shrink-0 text-right text-[11px] tabular-nums sm:self-baseline">
+                    {(factor.weight * 100).toFixed(0)}%
+                  </span>
+                </div>
+                <div className="h-0.5 sm:h-1 bg-bg-border rounded-sm">
+                  <div
+                    className="h-full bg-cyan transition-all rounded-sm"
+                    style={{ width: `${factor.weight * 100}%` }}
+                  />
+                </div>
               </div>
-              <div className="h-0.5 sm:h-1 bg-bg-border rounded-sm">
-                <div
-                  className="h-full bg-cyan transition-all rounded-sm"
-                  style={{ width: `${factor.weight * 100}%` }}
-                />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

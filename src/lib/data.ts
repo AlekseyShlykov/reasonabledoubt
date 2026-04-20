@@ -23,7 +23,7 @@ export interface CaseLogic {
     harmedPeople: { min: number; max: number };
     severityScore: number;
   };
-  aiFactors: Array<{ name: string; weight: number }>;
+  aiFactors: Array<{ key: string; weight: number }>;
   sparklines: {
     social: number[];
     financial: number[];
