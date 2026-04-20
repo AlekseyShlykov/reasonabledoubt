@@ -14,7 +14,7 @@ GitHub shows **README** at the repo root until you deploy a **built site**. This
    - Optional: `NEXT_PUBLIC_ADMIN_PASSWORD` (client-visible; only for the toy admin screen on static hosting)
 4. Wait for the green **Deploy to GitHub Pages** workflow, then open the **environment URL** (e.g. `https://<user>.github.io/<repo>/`).
 
-The workflow **fails the build** if `NEXT_PUBLIC_SUPABASE_URL` or `NEXT_PUBLIC_SUPABASE_ANON_KEY` is missing, so you do not publish a site where community percentages are stuck at zero because the client was built without Supabase.
+If those secrets are missing, the workflow still **builds and deploys**, but the site shows a notice and community percentages stay at zero until you add both secrets and push again.
 
 **Project site** (`…github.io/<repo>/`): the workflow sets `NEXT_PUBLIC_BASE_PATH=/<repo>` automatically.
 

@@ -43,11 +43,12 @@ jobs:
             echo "NEXT_PUBLIC_BASE_PATH=/$REPO_NAME" >> "$GITHUB_ENV"
           fi
 
-      - name: Require Supabase secrets (community stats)
+      - name: Warn if Supabase secrets missing (community stats)
         run: |
           if [ -z "$NEXT_PUBLIC_SUPABASE_URL" ] || [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
-            echo "::error::Add repository Actions secrets NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY (Settings → Secrets and variables → Actions). Without them the static build has no database client and all community percentages stay at zero."
-            exit 1
+            echo "::warning::Community stats disabled: add Actions secrets NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY (Settings → Secrets and variables → Actions), then redeploy. Build continues without them."
+          else
+            echo "Supabase env present — community stats will be available in the built site."
           fi
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
