@@ -88,6 +88,7 @@
     "password": "Password",
     "submit": "Submit",
     "invalidPassword": "Invalid password",
+    "notConfigured": "Admin login is not configured. Set NEXT_PUBLIC_ADMIN_PASSWORD when building the static site.",
     "sessions": "Sessions",
     "exportCSV": "Export CSV",
     "case": "Case",

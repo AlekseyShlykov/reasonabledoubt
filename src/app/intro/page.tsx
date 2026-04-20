@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loadTranslations, getStoredLocale, t } from '@/lib/i18n';
 import Typewriter from '@/components/Typewriter';
+import { withPublicPath } from '@/lib/basePath';
 
 export default function IntroPage() {
   const router = useRouter();
@@ -16,7 +17,7 @@ export default function IntroPage() {
       const locale = getStoredLocale();
       await loadTranslations(locale);
       try {
-        const response = await fetch(`/data/locales/${locale}/common.json`);
+        const response = await fetch(withPublicPath(`/data/locales/${locale}/common.json`));
         const data = await response.json();
         if (Array.isArray(data.intro)) {
           setIntroText(data.intro);

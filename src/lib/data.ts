@@ -1,4 +1,5 @@
 import type { Locale } from './i18n';
+import { withPublicPath } from './basePath';
 
 export interface CaseContent {
   id: number;
@@ -32,7 +33,7 @@ export interface CaseLogic {
 
 export async function loadCaseContent(locale: Locale, caseId: number): Promise<CaseContent | null> {
   try {
-    const response = await fetch(`/data/cases/${locale}/cases.json`);
+    const response = await fetch(withPublicPath(`/data/cases/${locale}/cases.json`));
     const data = await response.json();
     return data.cases.find((c: CaseContent) => c.id === caseId) || null;
   } catch (error) {
@@ -43,7 +44,7 @@ export async function loadCaseContent(locale: Locale, caseId: number): Promise<C
 
 export async function loadCaseLogic(caseId: number): Promise<CaseLogic | null> {
   try {
-    const response = await fetch('/data/logic/cases_logic.json');
+    const response = await fetch(withPublicPath('/data/logic/cases_logic.json'));
     const data = await response.json();
     return data.cases.find((c: CaseLogic) => c.id === caseId) || null;
   } catch (error) {
@@ -54,7 +55,7 @@ export async function loadCaseLogic(caseId: number): Promise<CaseLogic | null> {
 
 export async function loadAllCases(locale: Locale): Promise<CaseContent[]> {
   try {
-    const response = await fetch(`/data/cases/${locale}/cases.json`);
+    const response = await fetch(withPublicPath(`/data/cases/${locale}/cases.json`));
     const data = await response.json();
     return data.cases || [];
   } catch (error) {
@@ -65,7 +66,7 @@ export async function loadAllCases(locale: Locale): Promise<CaseContent[]> {
 
 export async function loadAllLogic(): Promise<CaseLogic[]> {
   try {
-    const response = await fetch('/data/logic/cases_logic.json');
+    const response = await fetch(withPublicPath('/data/logic/cases_logic.json'));
     const data = await response.json();
     return data.cases || [];
   } catch (error) {

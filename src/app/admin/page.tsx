@@ -16,22 +16,17 @@ export default function AdminPage() {
     loadTranslations(locale);
   }, []);
 
-  const handleLogin = async () => {
-    try {
-      const response = await fetch('/api/admin/check', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
-      });
-
-      if (response.ok) {
-        setAuthenticated(true);
-        loadData();
-      } else {
-        alert(t('admin.invalidPassword'));
-      }
-    } catch (error) {
-      console.error('Login error:', error);
+  const handleLogin = () => {
+    const expected =
+      (typeof process !== 'undefined' && process.env.NEXT_PUBLIC_ADMIN_PASSWORD) || '';
+    if (!expected) {
+      alert(t('admin.notConfigured'));
+      return;
+    }
+    if (password === expected) {
+      setAuthenticated(true);
+      loadData();
+    } else {
       alert(t('admin.invalidPassword'));
     }
   };

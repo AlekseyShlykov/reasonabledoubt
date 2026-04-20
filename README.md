@@ -1,6 +1,24 @@
 # Reasonable Doubt
 
-A narrative game exploring AI predictions and human judgment. Players are presented with ten cases where an AI system has predicted harmful behavior with >99% probability. The player must decide: Guilty, or Not Guilty?
+A narrative game exploring AI predictions and human judgment. Players get **five random cases** (from ten) where an AI system has predicted harmful behavior with >99% probability. The player must decide: Guilty, or Not Guilty?
+
+## GitHub Pages
+
+GitHub shows **README** at the repo root until you deploy a **built site**. This app uses **Next.js static export** (`out/`). Do this once:
+
+1. **Settings → Pages → Build and deployment → Source:** choose **GitHub Actions** (not “Deploy from a branch” on `main` alone).
+2. Push the workflow **`.github/workflows/deploy-pages.yml`** (included in this repo). It runs on every push to `main`.
+3. **Settings → Secrets and variables → Actions** — add repository secrets used at build time:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - Optional: `NEXT_PUBLIC_ADMIN_PASSWORD` (client-visible; only for the toy admin screen on static hosting)
+4. Wait for the green **Deploy to GitHub Pages** workflow, then open the **environment URL** (e.g. `https://<user>.github.io/<repo>/`).
+
+**Project site** (`…github.io/<repo>/`): the workflow sets `NEXT_PUBLIC_BASE_PATH=/<repo>` automatically.
+
+**User site** (repo named `<user>.github.io`): the workflow leaves the base path empty (site at domain root).
+
+Local static build: `npm run build` → open `out/index.html` via a static server, or use `NEXT_PUBLIC_BASE_PATH=/YourRepo npm run build` to match GitHub.
 
 ## Tech Stack
 
@@ -25,8 +43,11 @@ Create a `.env.local` file in the root directory:
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-ADMIN_PASSWORD=your_secure_admin_password
+# Static export / GitHub Pages: admin check runs in the browser (build-time env)
+NEXT_PUBLIC_ADMIN_PASSWORD=your_admin_password
 ```
+
+For **local `next dev`**, you can keep using `NEXT_PUBLIC_ADMIN_PASSWORD` for `/admin`, or leave it unset (admin shows “not configured”).
 
 ### 3. Database Setup
 
@@ -53,10 +74,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
   /app
     /page.tsx                # Screen 1: Title + Start
     /intro/page.tsx          # Screen 2: Typewriter intro
-    /cases/page.tsx          # Main gameplay (10 cases)
+    /cases/page.tsx          # Main gameplay (5 random cases)
     /results/page.tsx        # Final results screen
-    /admin/page.tsx          # Admin panel
-    /api/admin/check         # Admin authentication API
+    /admin/page.tsx          # Admin panel (password from NEXT_PUBLIC_ADMIN_PASSWORD on static builds)
   /components
     Header.tsx               # Persistent header with progress
     Footer.tsx                # Footer with creator info
@@ -94,7 +114,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 1. **Title Screen** (`/`) - Start game, language selection
 2. **Intro Screen** (`/intro`) - Typewriter effect with game introduction
-3. **Cases Screen** (`/cases`) - Main gameplay with 10 cases
+3. **Cases Screen** (`/cases`) - Main gameplay with 5 random cases per run
 4. **Results Screen** (`/results`) - Community statistics and personal decisions
 5. **Admin Panel** (`/admin`) - Password-protected analytics and CSV export
 
@@ -113,7 +133,7 @@ All user-visible text is stored in JSON files:
 
 ## Admin Panel
 
-Access at `/admin` with the password set in `ADMIN_PASSWORD` environment variable.
+Access at `/admin`. On **static hosting**, set **`NEXT_PUBLIC_ADMIN_PASSWORD`** at build time (same value as in GitHub Actions secrets if you use the deploy workflow). This is exposed in the client bundle — use only for a simple personal admin, not production secrets.
 
 Features:
 - View all sessions
@@ -135,10 +155,13 @@ Features:
 # Development server
 npm run dev
 
-# Build for production
+# Production build (static files in ./out — for GitHub Pages, etc.)
 npm run build
 
-# Start production server
+# Clean broken .next cache then dev (fixes 404 on main.js / fallback chunks)
+npm run dev:clean
+
+# Start Node production server (optional; GitHub Pages serves ./out as static files instead)
 npm start
 
 # Lint

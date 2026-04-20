@@ -1,3 +1,5 @@
+import { withPublicPath } from './basePath';
+
 export type Locale = 'en' | 'ru';
 type Translations = Record<string, any>;
 
@@ -7,7 +9,7 @@ let translations: Translations = {};
 export async function loadTranslations(locale: Locale): Promise<void> {
   currentLocale = locale;
   try {
-    const response = await fetch(`/data/locales/${locale}/common.json`);
+    const response = await fetch(withPublicPath(`/data/locales/${locale}/common.json`));
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
@@ -17,7 +19,7 @@ export async function loadTranslations(locale: Locale): Promise<void> {
     // Fallback to English
     if (locale !== 'en') {
       try {
-        const response = await fetch(`/data/locales/en/common.json`);
+        const response = await fetch(withPublicPath('/data/locales/en/common.json'));
         if (response.ok) {
           translations = await response.json();
         }
