@@ -145,6 +145,27 @@ export default function CasesPage() {
     finishTutorial();
   }, [finishTutorial]);
 
+  /** На мобилке панель обучения под ячейкой — прокручиваем к активному блоку при смене шага */
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (tutorialStep === null) return;
+
+    const isNarrow = window.matchMedia('(max-width: 1023px)').matches;
+    if (!isNarrow) return;
+
+    const el = document.getElementById(`case-tutorial-cell-${tutorialStep}`);
+
+    if (!el) return;
+
+    const runScroll = () => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(runScroll);
+    });
+  }, [tutorialStep]);
+
   const handleVerdict = async (verdict: boolean) => {
     if (processing || canonicalId === null || tutorialStep !== null) return;
 
@@ -217,14 +238,25 @@ export default function CasesPage() {
 
       <main className="flex-1 min-h-0 flex flex-col overflow-y-auto px-2 py-2 sm:px-4 sm:py-3">
         <div className="max-w-7xl mx-auto w-full flex flex-col gap-2 relative lg:flex-1 lg:min-h-0">
-          <CaseGrid content={content} logic={logic} tutorialHighlight={tutorialStep} />
+          <CaseGrid
+            content={content}
+            logic={logic}
+            tutorialHighlight={tutorialStep}
+            embeddedTutorial={
+              tutorialStep !== null
+                ? { step: tutorialStep, onNext: handleTutorialNext, onSkip: handleTutorialSkip }
+                : null
+            }
+          />
 
           {tutorialStep !== null && (
-            <CaseTutorialPanel
-              step={tutorialStep}
-              onNext={handleTutorialNext}
-              onSkip={handleTutorialSkip}
-            />
+            <div className="hidden lg:block">
+              <CaseTutorialPanel
+                step={tutorialStep}
+                onNext={handleTutorialNext}
+                onSkip={handleTutorialSkip}
+              />
+            </div>
           )}
 
           {phase === 'case' && (
