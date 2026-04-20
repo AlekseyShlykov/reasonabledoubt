@@ -8,9 +8,60 @@ import '@/styles/globals.css';
 
 const GA_MEASUREMENT_ID = 'G-1VL1RR3W2F';
 
+/** Same rules as `next.config.js` so OG/Twitter absolute URLs match GitHub Pages / subpath deploys. */
+function publicBasePath(): string {
+  let base = (process.env.NEXT_PUBLIC_BASE_PATH || '').trim().replace(/\/$/, '');
+  if (base && !base.startsWith('/')) base = `/${base}`;
+  return base && base !== '/' ? base : '';
+}
+
+/**
+ * Canonical site root for metadata (no trailing slash before URL()).
+ * Set in CI/production, e.g. `https://yourname.github.io` + `NEXT_PUBLIC_BASE_PATH=/Verdict`.
+ */
+function metadataBaseUrl(): URL {
+  const origin = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
+  const base = publicBasePath();
+  const joined = `${origin}${base}`;
+  return new URL(joined.endsWith('/') ? joined : `${joined}/`);
+}
+
+const OG_TITLE = 'Reasonable Doubt';
+const OG_DESCRIPTION =
+  'A narrative game about AI predictions, community verdicts, and the weight of reasonable doubt.';
+
+/** Absolute URL so OG/Twitter work with `basePath` (e.g. GitHub Project Pages). */
+function absoluteOgImageUrl(): string {
+  const origin = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
+  const base = publicBasePath();
+  const path = base ? `${base}/og-preview.png` : '/og-preview.png';
+  return `${origin}${path}`;
+}
+
 export const metadata: Metadata = {
-  title: 'Reasonable Doubt',
-  description: 'A narrative game about AI predictions and human judgment',
+  metadataBase: metadataBaseUrl(),
+  title: OG_TITLE,
+  description: OG_DESCRIPTION,
+  openGraph: {
+    title: OG_TITLE,
+    description: OG_DESCRIPTION,
+    type: 'website',
+    locale: 'en_US',
+    images: [
+      {
+        url: absoluteOgImageUrl(),
+        width: 1024,
+        height: 576,
+        alt: 'Reasonable Doubt — title screen with Start',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: OG_TITLE,
+    description: OG_DESCRIPTION,
+    images: [absoluteOgImageUrl()],
+  },
 };
 
 export const viewport = {
