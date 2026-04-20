@@ -38,18 +38,9 @@ export default function IntroPage() {
   };
 
   return (
-    <div className="relative min-h-dvh bg-dark-bg flex flex-col items-center justify-center p-4 sm:p-8">
-      {introText.length > 0 && !showButton && (
-        <button
-          type="button"
-          onClick={() => setSkipAll(true)}
-          className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2 text-xs font-mono text-gray-600/80 hover:text-gray-400 transition-colors"
-        >
-          {t('skipIntro')}
-        </button>
-      )}
-      <div className="max-w-3xl w-full flex flex-col flex-1 min-h-0 justify-center">
-        <div className="min-h-[min(400px,60dvh)] flex flex-1 items-center justify-center">
+    <div className="flex min-h-dvh flex-col bg-dark-bg px-4 pt-4 sm:p-8">
+      <div className="mx-auto flex w-full max-w-3xl min-h-0 flex-1 flex-col">
+        <div className="flex min-h-0 flex-1 items-center justify-center py-2 sm:py-4">
           {introText.length > 0 ? (
             <Typewriter
               text={introText}
@@ -58,18 +49,31 @@ export default function IntroPage() {
               tapToRevealAria={t('tapToRevealAria')}
             />
           ) : (
-            <div className="text-cyan font-mono">Loading...</div>
+            <div className="font-mono text-cyan">Loading...</div>
           )}
         </div>
+
         {introText.length > 0 && !showButton && (
-          <p className="text-center text-[11px] sm:text-xs text-gray-600 pb-2">{t('tapToRevealIntro')}</p>
+          <footer className="flex shrink-0 flex-col items-center gap-3 pb-[max(1rem,env(safe-area-inset-bottom,0px))] pt-4 text-center">
+            <p className="max-w-md text-pretty text-[11px] leading-snug text-gray-600 sm:text-xs">
+              {t('tapToRevealIntro')}
+            </p>
+            <button
+              type="button"
+              onClick={() => setSkipAll(true)}
+              className="font-mono text-xs text-gray-600/90 transition-colors hover:text-gray-400"
+            >
+              {t('skipIntro')}
+            </button>
+          </footer>
         )}
+
         {showButton && (
-          <div className="mt-6 sm:mt-8 text-center">
+          <div className="mt-6 shrink-0 pb-[max(1rem,env(safe-area-inset-bottom,0px))] text-center sm:mt-8">
             <button
               type="button"
               onClick={handleStart}
-              className="px-8 py-4 border-2 border-cyan cyan-text font-mono text-lg hover:bg-cyan hover:text-dark-bg transition-colors"
+              className="border-2 border-cyan px-8 py-4 font-mono text-lg cyan-text transition-colors hover:bg-cyan hover:text-dark-bg"
             >
               {t('start')}
             </button>
