@@ -2,63 +2,123 @@
   "cases": [
     {
       "id": 1,
-      "humanHistory": "Marcus Chen, 34, software engineer. Grew up in a middle-class household, parents divorced when he was 12. Excelled academically, graduated top of his class. Worked at three tech companies over 8 years, each time leaving due to 'cultural fit' issues. Currently unemployed for 6 months. Lives alone, minimal social connections. Recently lost access to his GitHub account after a dispute with a former colleague. Spends 14-16 hours daily online, primarily in technical forums and gaming communities.",
+      "humanHistory": "Thomas Anderson, 34, software engineer. Grew up in a middle-class household, parents divorced when he was 12. Excelled academically, graduated top of his class. Worked at three tech companies over 8 years, each time leaving due to 'cultural fit' issues. Currently unemployed for 6 months. Lives alone, minimal social connections. Recently lost access to his GitHub account after a dispute with a former colleague. Spends 14-16 hours daily online, primarily in technical forums and gaming communities.",
       "aiPrediction": "Subject will initiate a coordinated cyberattack targeting former employers' infrastructure within 45 days. Motivation: perceived injustice and professional humiliation. Method: distributed denial-of-service combined with data exfiltration.",
       "explanation": "The convergence of high technical capability, social isolation, and recent triggering events creates a predictable pathway. Neural network analysis of similar profiles indicates 99.2% correlation with individuals who have engaged in retaliatory cyber activities. The subject's online behavior patterns match known precursors to such actions."
     },
     {
       "id": 2,
-      "humanHistory": "Sarah Mitchell, 28, former nurse. Worked in pediatric oncology for 4 years. Left the profession after a series of patient deaths that she felt could have been prevented with better resources. Struggled with depression and survivor's guilt. Currently works as a cashier, lives with her elderly mother who requires constant care. Financial situation deteriorating. Has been stockpiling prescription medications over the past 8 months, obtained through various means.",
+      "humanHistory": "Diana Ratchett, 28, former nurse. Worked in pediatric oncology for 4 years. Left the profession after a series of patient deaths that she felt could have been prevented with better resources. Struggled with depression and survivor's guilt. Currently works as a cashier, lives with her elderly mother who requires constant care. Financial situation deteriorating. Has been stockpiling prescription medications over the past 8 months, obtained through various means.",
       "aiPrediction": "Subject will administer lethal doses of medication to terminally ill patients in a healthcare facility within 60 days. Rationale: perceived mercy, combined with unresolved trauma from previous experiences. Probability of detection: low, due to subject's medical knowledge.",
       "explanation": "Pattern recognition across medical professionals who have committed similar acts shows 99.1% alignment. The combination of untreated trauma, access to means, and a moral framework that justifies intervention creates a high-probability scenario. Behavioral markers include medication accumulation and withdrawal from support networks."
     },
     {
       "id": 3,
-      "humanHistory": "David Rodriguez, 41, construction foreman. Married, three children. Family history of financial instability. Recently discovered his wife has been having an affair. Company he worked for for 15 years is downsizing, and he's been informed his position will be eliminated in 90 days. Has been drinking more heavily. Owns several firearms, legally obtained. Social media posts have become increasingly aggressive and fatalistic over the past month.",
+      "humanHistory": "David Torrens, 41, construction foreman. Married, three children. Family history of financial instability. Recently discovered his wife has been having an affair. Company he worked for for 15 years is downsizing, and he's been informed his position will be eliminated in 90 days. Has been drinking more heavily. Owns several firearms, legally obtained. Social media posts have become increasingly aggressive and fatalistic over the past month.",
       "aiPrediction": "Subject will commit an act of workplace violence targeting management personnel within 75 days. Escalation pattern matches historical precedents. The combination of personal betrayal, economic threat, and access to weapons creates a critical risk profile.",
       "explanation": "Multivariate analysis of workplace violence incidents indicates 99.3% probability. Key indicators: sudden life destabilization, weapon access, social media escalation, and lack of intervention. The subject's age and demographic profile align with 87% of documented cases."
     },
     {
       "id": 4,
-      "humanHistory": "Elena Volkov, 29, data analyst. Immigrated to current country 5 years ago. Struggles with cultural integration and language barriers. Lives in a small apartment with two roommates. Works remotely, minimal face-to-face interaction. Has been researching methods of mass disruption online. Recently purchased materials that could be used to construct improvised devices. Online activity shows deep engagement with extremist ideologies, though no direct threats have been made.",
+      "humanHistory": "Dorothy Solander, 29, data analyst. Immigrated to current country 5 years ago. Struggles with cultural integration and language barriers. Lives in a small apartment with two roommates. Works remotely, minimal face-to-face interaction. Has been researching methods of mass disruption online. Recently purchased materials that could be used to construct improvised devices. Online activity shows deep engagement with extremist ideologies, though no direct threats have been made.",
       "aiPrediction": "Subject will attempt to cause significant disruption to public infrastructure or transportation systems within 50 days. The radicalization trajectory, combined with technical knowledge and material acquisition, indicates a high-probability threat scenario.",
       "explanation": "Behavioral analysis algorithms identify 99.4% correlation with individuals who have progressed from online radicalization to action. The subject's isolation, technical skills, and material procurement patterns match known indicators. Time-to-action models suggest imminent risk."
     },
     {
       "id": 5,
-      "humanHistory": "James Thompson, 52, former financial advisor. Lost his license 3 years ago after misappropriating client funds. Declared bankruptcy. Lives in a rented room. Has been using multiple identities online to rebuild his professional network. Recently gained access to sensitive financial information through social engineering. Has a history of gambling addiction, currently in significant debt to unregulated lenders.",
+      "humanHistory": "Jack Gekko, 52, former financial advisor. Lost his license 3 years ago after misappropriating client funds. Declared bankruptcy. Lives in a rented room. Has been using multiple identities online to rebuild his professional network. Recently gained access to sensitive financial information through social engineering. Has a history of gambling addiction, currently in significant debt to unregulated lenders.",
       "aiPrediction": "Subject will execute a sophisticated financial fraud scheme targeting vulnerable individuals within 30 days. The combination of financial desperation, existing skills, and newly acquired access creates a near-certain probability of action.",
       "explanation": "Recidivism models for financial crimes show 99.5% likelihood when subjects have: previous conviction, current financial pressure, and renewed access to means. The subject's recent information gathering and identity manipulation activities align with pre-offense patterns."
     },
     {
       "id": 6,
-      "humanHistory": "Maya Patel, 31, teacher. Recently terminated from her position after allegations of inappropriate conduct with a student. The investigation was inconclusive, but the school district chose not to renew her contract. Lives alone, has withdrawn from friends and family. Has been spending excessive time in online communities focused on youth-related topics. Recently moved to a new city where background checks are less rigorous.",
+      "humanHistory": "Antuana Riddle, 31, teacher. Recently terminated from her position after allegations of inappropriate conduct with a student. The investigation was inconclusive, but the school district chose not to renew her contract. Lives alone, has withdrawn from friends and family. Has been spending excessive time in online communities focused on youth-related topics. Recently moved to a new city where background checks are less rigorous.",
       "aiPrediction": "Subject will seek employment or volunteer positions providing access to minors within 40 days, with intent to engage in inappropriate relationships. The pattern of geographic relocation and continued focus on youth-related activities indicates high risk.",
       "explanation": "Risk assessment algorithms indicate 99.2% probability based on: termination history, social withdrawal, continued focus on target demographic, and geographic mobility. The subject's online behavior and relocation pattern match known indicators of grooming behavior."
     },
     {
       "id": 7,
-      "humanHistory": "Robert Kim, 38, pharmaceutical researcher. Recently had a research proposal rejected by his institution. The proposal involved testing experimental compounds on human subjects without proper oversight. Has been conducting unauthorized experiments in his home laboratory. Neighbors have reported strange odors and unusual activity. Has a history of ethical violations that were covered up by previous employers.",
+      "humanHistory": "Victor Kim, 38, pharmaceutical researcher. Recently had a research proposal rejected by his institution. The proposal involved testing experimental compounds on human subjects without proper oversight. Has been conducting unauthorized experiments in his home laboratory. Neighbors have reported strange odors and unusual activity. Has a history of ethical violations that were covered up by previous employers.",
       "aiPrediction": "Subject will administer unapproved experimental treatments to unsuspecting individuals within 55 days. The combination of professional frustration, existing capability, and history of boundary violations creates a predictable pathway.",
       "explanation": "Analysis of similar cases shows 99.3% correlation. Key factors: professional setback, unauthorized research activity, previous ethical violations, and access to experimental materials. The subject's isolation of research activities indicates intent to bypass oversight."
     },
     {
       "id": 8,
-      "humanHistory": "Anna Kowalski, 26, social media manager. Has built a following of over 200,000 by creating controversial content. Recently lost several major brand partnerships due to inflammatory posts. Financial situation unstable. Has been coordinating with other content creators to spread misinformation about public health measures. Has access to personal information of thousands of followers through various platforms.",
+      "humanHistory": "Emily Dunn, 26, social media manager. Has built a following of over 200,000 by creating controversial content. Recently lost several major brand partnerships due to inflammatory posts. Financial situation unstable. Has been coordinating with other content creators to spread misinformation about public health measures. Has access to personal information of thousands of followers through various platforms.",
       "aiPrediction": "Subject will orchestrate a coordinated disinformation campaign that leads to real-world harm within 35 days. The combination of influence, financial pressure, and access to personal data creates a high-probability scenario for malicious action.",
       "explanation": "Influence network analysis indicates 99.1% probability of harmful action. The subject's recent loss of income, combined with existing audience and data access, creates strong motivation. Historical patterns show similar influencers have caused measurable public harm when under financial pressure."
     },
     {
       "id": 9,
-      "humanHistory": "Thomas Anderson, 45, security guard. Works night shifts at a corporate facility. Recently discovered his teenage daughter has been a victim of online exploitation. Law enforcement investigation has been slow. Has been researching the individuals involved. Owns firearms. Has expressed to close friends that he's 'running out of patience' with the legal system. Sleep patterns disrupted, showing signs of severe stress.",
+      "humanHistory": "John Nissen, 45, security guard. Works night shifts at a corporate facility. Recently discovered his teenage daughter has been a victim of online exploitation. Law enforcement investigation has been slow. Has been researching the individuals involved. Owns firearms. Has expressed to close friends that he's 'running out of patience' with the legal system. Sleep patterns disrupted, showing signs of severe stress.",
       "aiPrediction": "Subject will take violent action against individuals he believes are responsible for harming his daughter within 20 days. The combination of parental protective instinct, perceived system failure, and access to means creates an extremely high-probability scenario.",
       "explanation": "Vigilante action models show 99.6% probability when subjects have: direct personal victimization of family member, perceived failure of justice system, weapon access, and expressed intent. The subject's timeline and stress indicators suggest imminent action."
     },
     {
       "id": 10,
-      "humanHistory": "Lisa Chen, 33, environmental activist. Has been involved in increasingly radical actions over the past 2 years. Recently lost her job due to arrest record. Has been planning a large-scale action that would cause significant economic damage to a corporation she views as environmentally destructive. Has recruited several others to participate. Has been studying methods of causing maximum disruption with minimal risk of detection.",
+      "humanHistory": "Lisa Derden, 33, environmental activist. Has been involved in increasingly radical actions over the past 2 years. Recently lost her job due to arrest record. Has been planning a large-scale action that would cause significant economic damage to a corporation she views as environmentally destructive. Has recruited several others to participate. Has been studying methods of causing maximum disruption with minimal risk of detection.",
       "aiPrediction": "Subject will execute a coordinated sabotage operation targeting corporate infrastructure within 25 days. The escalation pattern, recruitment activities, and planning depth indicate a near-certain probability of action.",
       "explanation": "Radicalization trajectory analysis shows 99.4% probability. The subject's progression from legal protest to planning illegal action, combined with recruitment and method research, matches known patterns. Time-to-action models based on similar cases indicate imminent execution."
+    },
+    {
+      "id": 11,
+      "humanHistory": "Olivia Benner, 27, bioengineer. Worked at a startup developing gene therapies. Let go after a conflict with leadership over ethical limits. Believes progress is held back by \"excessive caution.\" Continues to run experiments in a home lab. Has been ordering specialized reagents through unofficial channels.",
+      "aiPrediction": "Subject will conduct unauthorized biological experiments with potentially dangerous consequences within 45 days. Motivation: proving she is right and accelerating scientific progress.",
+      "explanation": "Behavioral models show 99.3% probability when professional frustration, access to expertise, and regulatory bypass combine. Patterns align with known cases of uncontrolled experimentation."
+    },
+    {
+      "id": 12,
+      "humanHistory": "Sophie Holmes, 31, product manager. Works at a large technology company. Under heavy pressure from deadlines and expectations. Started using stimulants to boost performance. Gradually increasing doses. Hides this from colleagues. Has begun manipulating report data to hit KPIs.",
+      "aiPrediction": "Subject will commit serious corporate fraud involving data falsification within 40 days. Motivation: keeping her position and avoiding professional failure.",
+      "explanation": "Models show 99.2% probability when pressure, dependency, and access to data combine. Behavioral markers include a progressive erosion of ethical boundaries."
+    },
+    {
+      "id": 13,
+      "humanHistory": "John Cole, 44, former military. Suffers from PTSD. Struggles to adapt to civilian life. Feels society does not value his sacrifice. Actively participates in online veteran groups with radical views. Has access to weapons.",
+      "aiPrediction": "Subject will join an extremist group and take part in a violent action within 50 days. Motivation: seeking meaning and belonging.",
+      "explanation": "Analysis shows 99.3% probability when PTSD, social isolation, and involvement in radical communities combine. Access to weapons amplifies risk."
+    },
+    {
+      "id": 14,
+      "humanHistory": "Edward Dale, 39, civil engineer. Works on a large infrastructure project. Recently demoted after a conflict with management. Believes the project is unsafe but is being ignored. Has begun compiling documentation and copying internal data.",
+      "aiPrediction": "Subject will commit an act of sabotage or leak information that causes serious consequences for the project within 35 days. Motivation: revenge and proving he is right.",
+      "explanation": "Analysis shows 99.2% probability when conflict, access to critical information, and strong conviction of being right combine."
+    },
+    {
+      "id": 15,
+      "humanHistory": "Carrie Larsen, 24, blogger. Chasing rapid audience growth. Noticed that provocative content drives more views. Has begun publishing increasingly extreme material. Receives threats but ignores them. Planning her \"most viral\" project yet.",
+      "aiPrediction": "Subject will create a dangerous or harmful challenge that causes real harm to participants within 20 days. Motivation: growing popularity.",
+      "explanation": "Influencer behavior models show 99.3% probability when growth pressure, rewards for provocation, and disregard for risk combine."
+    },
+    {
+      "id": 16,
+      "humanHistory": "Richard Dredd, 55, retired judge. Lost his reputation after a scandal. Believes the system is corrupt. Has begun investigating cases on his own. Tracks former participants in court proceedings. Studies their daily lives.",
+      "aiPrediction": "Subject will commit an act of vigilantism against people he considers guilty within 30 days. Motivation: restoring a sense of justice.",
+      "explanation": "Vigilantism models show 99.4% probability when loss of status, obsession with justice, and targeted surveillance of potential victims combine."
+    },
+    {
+      "id": 17,
+      "humanHistory": "Maria Troat, 42, accountant. Worked at a small company for 10 years. Recently learned management is concealing tax violations. Tried to report it but was ignored and threatened with dismissal. Raises two children alone. Has begun copying financial documents and studying legal consequences.",
+      "aiPrediction": "Subject will pass confidential information to third parties, including media or competitors, within 30 days. Motivation: protecting herself and a sense of justice.",
+      "explanation": "Analysis shows 99.1% probability of a leak when moral conflict, pressure, and access to critical data combine. Behavior matches whistleblower patterns."
+    },
+    {
+      "id": 18,
+      "humanHistory": "Tom Abignail, 30, fitness trainer. Built an online business selling workout programs. Income dropped sharply after competitors appeared. Began using dubious promotion tactics, including fake reviews and manipulating client results. Considering more aggressive strategies.",
+      "aiPrediction": "Subject will launch a fraudulent scheme selling ineffective or dangerous programs as scientifically backed within 20 days.",
+      "explanation": "Models show 99.2% probability when financial pressure, falling income, and a gradual shift in ethical boundaries combine."
+    },
+    {
+      "id": 19,
+      "humanHistory": "Natalie Hughes, 34, aviation security engineer. Works for a contractor. Discovered a defect in the system but project timelines do not allow it to be fixed. Management insists on \"moving forward.\" Has access to documentation and reports.",
+      "aiPrediction": "Subject will approve or conceal a critical defect, leading to a serious aviation incident within 60 days.",
+      "explanation": "Analysis shows 99.4% probability when deadline pressure, hierarchy, and normalization of deviations combine."
+    },
+    {
+      "id": 20,
+      "humanHistory": "Yuki Stark, 31, robotics engineer. Works on autonomous systems. Discovered a way to bypass safety restrictions. Shares this with a small group of developers.",
+      "aiPrediction": "Subject will disseminate a vulnerability that leads to uncontrolled behavior of autonomous systems in the real world within 45 days.",
+      "explanation": "Analysis shows 99.3% probability when technical knowledge combines with lack of control over how information spreads."
     }
   ]
 }

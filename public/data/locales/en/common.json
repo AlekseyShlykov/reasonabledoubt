@@ -9,16 +9,16 @@
   "english": "English",
   "russian": "Russian",
   "intro": [
-    "In a world where artificial intelligence predicts human behavior with unprecedented accuracy,",
-    "you are presented with five cases, chosen at random from ten.",
+    "In a world where artificial intelligence predicts human behavior with unprecedented accuracy—including future crimes.",
+    "You will review five randomly selected cases in which the probability of a crime exceeds 99.0%.",
     "Each case contains a person's life history, psychological profile, and social context.",
-    "An AI system has analyzed this data and made a prediction:",
-    "this person will commit a harmful act.",
+    "The AI system has analyzed this data and made a forecast:",
+    "this person will commit a serious crime with victims.",
     "The probability exceeds 99.0%.",
-    "The system provides scientific explanations, coefficients, and trend analyses.",
+    "The system provides scientific explanations, coefficients, and trend analysis.",
     "But you must decide:",
     "Guilty, or Not Guilty?",
-    "The weight of reasonable doubt rests with you."
+    "The burden of reasonable doubt is yours."
   ],
   "tutorial": {
     "caseStep0": "A short life-history of the person in the case.",

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { loadTranslations, getStoredLocale, t } from '@/lib/i18n';
 import { getAllSessions, getCaseStatistics, type VerdictSession } from '@/lib/supabase';
+import { CASE_POOL_MAX } from '@/lib/storage';
 
 export default function AdminPage() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -190,7 +191,7 @@ export default function AdminPage() {
         <div className="bg-surface border border-bg-border p-6">
           <h2 className="text-xl font-mono cyan-text mb-4">{t('admin.case')} Statistics</h2>
           <div className="grid grid-cols-5 gap-4">
-            {Array.from({ length: 10 }, (_, i) => i + 1).map((caseNum) => {
+            {Array.from({ length: CASE_POOL_MAX }, (_, i) => i + 1).map((caseNum) => {
               const caseStats = stats[caseNum] || { guilty: 0, notGuilty: 0 };
               const total = caseStats.guilty + caseStats.notGuilty;
               const guiltyPercent = total > 0 ? (caseStats.guilty / total) * 100 : 0;

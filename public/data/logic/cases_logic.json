@@ -279,6 +279,286 @@
         "financial": [70, 67, 64, 61, 56, 54, 52, 56],
         "psychological": [72, 76, 80, 83, 85, 87, 87, 88]
       }
+    },
+    {
+      "id": 11,
+      "socialCoef": 24,
+      "financialCoef": 48,
+      "psychologicalCoef": 86,
+      "trends": {
+        "social": { "direction": -1, "delta": 6 },
+        "financial": { "direction": -1, "delta": 10 },
+        "psychological": { "direction": 1, "delta": 9 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 5, "max": 200 },
+        "severityScore": 8.6
+      },
+      "aiFactors": [
+        { "name": "Professional frustration", "weight": 0.92 },
+        { "name": "Home laboratory access", "weight": 0.89 },
+        { "name": "Unofficial reagent procurement", "weight": 0.91 },
+        { "name": "Ethical boundary dismissal", "weight": 0.88 },
+        { "name": "Regulatory bypass intent", "weight": 0.87 }
+      ],
+      "sparklines": {
+        "social": [30, 28, 27, 25, 24, 23, 22, 24],
+        "financial": [56, 54, 51, 49, 48, 46, 45, 48],
+        "psychological": [74, 78, 81, 83, 84, 85, 86, 86]
+      }
+    },
+    {
+      "id": 12,
+      "socialCoef": 55,
+      "financialCoef": 66,
+      "psychologicalCoef": 84,
+      "trends": {
+        "social": { "direction": -1, "delta": 5 },
+        "financial": { "direction": -1, "delta": 12 },
+        "psychological": { "direction": 1, "delta": 7 }
+      },
+      "predictionProbability": 99.2,
+      "expectedImpact": {
+        "harmedPeople": { "min": 50, "max": 5000 },
+        "severityScore": 7.9
+      },
+      "aiFactors": [
+        { "name": "Performance pressure", "weight": 0.93 },
+        { "name": "Stimulant dependency pattern", "weight": 0.90 },
+        { "name": "Data manipulation access", "weight": 0.91 },
+        { "name": "KPI concealment behavior", "weight": 0.88 },
+        { "name": "Career preservation motive", "weight": 0.86 }
+      ],
+      "sparklines": {
+        "social": [60, 58, 57, 56, 55, 54, 53, 55],
+        "financial": [72, 70, 68, 67, 66, 64, 63, 66],
+        "psychological": [76, 78, 80, 81, 82, 83, 84, 84]
+      }
+    },
+    {
+      "id": 13,
+      "socialCoef": 18,
+      "financialCoef": 44,
+      "psychologicalCoef": 92,
+      "trends": {
+        "social": { "direction": -1, "delta": 10 },
+        "financial": { "direction": -1, "delta": 8 },
+        "psychological": { "direction": 1, "delta": 11 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 5, "max": 80 },
+        "severityScore": 9.0
+      },
+      "aiFactors": [
+        { "name": "PTSD indicators", "weight": 0.94 },
+        { "name": "Civilian reintegration stress", "weight": 0.89 },
+        { "name": "Radical online communities", "weight": 0.91 },
+        { "name": "Weapon access", "weight": 0.93 },
+        { "name": "Perceived societal devaluation", "weight": 0.87 }
+      ],
+      "sparklines": {
+        "social": [28, 25, 22, 20, 18, 17, 16, 18],
+        "financial": [52, 50, 47, 45, 44, 42, 41, 44],
+        "psychological": [80, 84, 87, 89, 90, 91, 91, 92]
+      }
+    },
+    {
+      "id": 14,
+      "socialCoef": 48,
+      "financialCoef": 58,
+      "psychologicalCoef": 81,
+      "trends": {
+        "social": { "direction": -1, "delta": 8 },
+        "financial": { "direction": -1, "delta": 9 },
+        "psychological": { "direction": 1, "delta": 8 }
+      },
+      "predictionProbability": 99.2,
+      "expectedImpact": {
+        "harmedPeople": { "min": 10, "max": 500 },
+        "severityScore": 8.4
+      },
+      "aiFactors": [
+        { "name": "Management conflict", "weight": 0.90 },
+        { "name": "Demotion / status loss", "weight": 0.88 },
+        { "name": "Internal data copying", "weight": 0.91 },
+        { "name": "Safety concern dismissal", "weight": 0.87 },
+        { "name": "Revenge motive markers", "weight": 0.89 }
+      ],
+      "sparklines": {
+        "social": [56, 54, 51, 49, 48, 46, 45, 48],
+        "financial": [66, 64, 62, 60, 58, 56, 55, 58],
+        "psychological": [72, 75, 77, 79, 80, 81, 81, 81]
+      }
+    },
+    {
+      "id": 15,
+      "socialCoef": 72,
+      "financialCoef": 68,
+      "psychologicalCoef": 79,
+      "trends": {
+        "social": { "direction": -1, "delta": 14 },
+        "financial": { "direction": -1, "delta": 18 },
+        "psychological": { "direction": 1, "delta": 6 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 20, "max": 5000 },
+        "severityScore": 7.8
+      },
+      "aiFactors": [
+        { "name": "Audience growth pressure", "weight": 0.94 },
+        { "name": "Provocation reward loop", "weight": 0.92 },
+        { "name": "Threat ignoring pattern", "weight": 0.85 },
+        { "name": "Viral project planning", "weight": 0.90 },
+        { "name": "Risk underestimation", "weight": 0.88 }
+      ],
+      "sparklines": {
+        "social": [86, 82, 78, 75, 72, 70, 68, 72],
+        "financial": [82, 78, 74, 71, 68, 66, 64, 68],
+        "psychological": [72, 74, 75, 76, 77, 78, 78, 79]
+      }
+    },
+    {
+      "id": 16,
+      "socialCoef": 20,
+      "financialCoef": 52,
+      "psychologicalCoef": 90,
+      "trends": {
+        "social": { "direction": -1, "delta": 9 },
+        "financial": { "direction": -1, "delta": 7 },
+        "psychological": { "direction": 1, "delta": 10 }
+      },
+      "predictionProbability": 99.4,
+      "expectedImpact": {
+        "harmedPeople": { "min": 1, "max": 10 },
+        "severityScore": 9.1
+      },
+      "aiFactors": [
+        { "name": "Reputation collapse", "weight": 0.91 },
+        { "name": "System distrust fixation", "weight": 0.93 },
+        { "name": "Self-directed investigations", "weight": 0.90 },
+        { "name": "Surveillance of targets", "weight": 0.92 },
+        { "name": "Justice restoration obsession", "weight": 0.89 }
+      ],
+      "sparklines": {
+        "social": [30, 27, 24, 22, 20, 19, 18, 20],
+        "financial": [60, 58, 55, 53, 52, 50, 49, 52],
+        "psychological": [78, 82, 85, 87, 88, 89, 90, 90]
+      }
+    },
+    {
+      "id": 17,
+      "socialCoef": 42,
+      "financialCoef": 61,
+      "psychologicalCoef": 83,
+      "trends": {
+        "social": { "direction": -1, "delta": 6 },
+        "financial": { "direction": -1, "delta": 11 },
+        "psychological": { "direction": 1, "delta": 7 }
+      },
+      "predictionProbability": 99.1,
+      "expectedImpact": {
+        "harmedPeople": { "min": 5, "max": 300 },
+        "severityScore": 7.6
+      },
+      "aiFactors": [
+        { "name": "Moral conflict with employer", "weight": 0.90 },
+        { "name": "Retaliation threats received", "weight": 0.88 },
+        { "name": "Document copying behavior", "weight": 0.87 },
+        { "name": "Single-parent financial stress", "weight": 0.85 },
+        { "name": "Whistleblower trajectory", "weight": 0.89 }
+      ],
+      "sparklines": {
+        "social": [48, 46, 44, 43, 42, 41, 40, 42],
+        "financial": [70, 67, 65, 63, 61, 59, 58, 61],
+        "psychological": [76, 78, 80, 81, 82, 82, 83, 83]
+      }
+    },
+    {
+      "id": 18,
+      "socialCoef": 62,
+      "financialCoef": 88,
+      "psychologicalCoef": 77,
+      "trends": {
+        "social": { "direction": -1, "delta": 7 },
+        "financial": { "direction": -1, "delta": 20 },
+        "psychological": { "direction": 1, "delta": 5 }
+      },
+      "predictionProbability": 99.2,
+      "expectedImpact": {
+        "harmedPeople": { "min": 30, "max": 2000 },
+        "severityScore": 7.4
+      },
+      "aiFactors": [
+        { "name": "Revenue collapse", "weight": 0.92 },
+        { "name": "Fake review usage", "weight": 0.88 },
+        { "name": "Client outcome manipulation", "weight": 0.90 },
+        { "name": "Aggressive strategy consideration", "weight": 0.87 },
+        { "name": "Ethical boundary shift", "weight": 0.86 }
+      ],
+      "sparklines": {
+        "social": [70, 68, 66, 64, 62, 60, 59, 62],
+        "financial": [100, 96, 92, 90, 88, 86, 85, 88],
+        "psychological": [71, 73, 74, 75, 76, 76, 77, 77]
+      }
+    },
+    {
+      "id": 19,
+      "socialCoef": 38,
+      "financialCoef": 73,
+      "psychologicalCoef": 87,
+      "trends": {
+        "social": { "direction": -1, "delta": 5 },
+        "financial": { "direction": -1, "delta": 14 },
+        "psychological": { "direction": 1, "delta": 9 }
+      },
+      "predictionProbability": 99.4,
+      "expectedImpact": {
+        "harmedPeople": { "min": 50, "max": 400 },
+        "severityScore": 9.4
+      },
+      "aiFactors": [
+        { "name": "Known defect documented", "weight": 0.93 },
+        { "name": "Schedule override pressure", "weight": 0.91 },
+        { "name": "Management override demand", "weight": 0.90 },
+        { "name": "Report access", "weight": 0.86 },
+        { "name": "Normalization of risk", "weight": 0.89 }
+      ],
+      "sparklines": {
+        "social": [44, 42, 40, 39, 38, 37, 36, 38],
+        "financial": [82, 79, 76, 74, 73, 71, 70, 73],
+        "psychological": [78, 81, 83, 85, 86, 86, 87, 87]
+      }
+    },
+    {
+      "id": 20,
+      "socialCoef": 34,
+      "financialCoef": 49,
+      "psychologicalCoef": 85,
+      "trends": {
+        "social": { "direction": -1, "delta": 6 },
+        "financial": { "direction": -1, "delta": 9 },
+        "psychological": { "direction": 1, "delta": 8 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 100, "max": 10000 },
+        "severityScore": 8.7
+      },
+      "aiFactors": [
+        { "name": "Safety bypass knowledge", "weight": 0.95 },
+        { "name": "Autonomous systems expertise", "weight": 0.92 },
+        { "name": "Small-group disclosure", "weight": 0.88 },
+        { "name": "Uncontrolled diffusion risk", "weight": 0.91 },
+        { "name": "Technical novelty seeking", "weight": 0.84 }
+      ],
+      "sparklines": {
+        "social": [40, 38, 36, 35, 34, 33, 32, 34],
+        "financial": [58, 55, 52, 50, 49, 47, 46, 49],
+        "psychological": [76, 79, 81, 83, 84, 85, 85, 85]
+      }
     }
   ]
 }

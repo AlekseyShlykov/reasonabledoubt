@@ -1,10 +1,10 @@
 export const TOTAL_ROUNDS = 5;
-export const CASE_POOL_MAX = 10;
+export const CASE_POOL_MAX = 20;
 
 export interface SessionData {
   sessionId: string;
   locale: string;
-  /** Canonical case ids from JSON (1–10), length TOTAL_ROUNDS */
+  /** Canonical case ids from JSON (1–CASE_POOL_MAX), length TOTAL_ROUNDS */
   caseOrder: number[];
   /** 0 .. TOTAL_ROUNDS — at TOTAL_ROUNDS the session is finished */
   roundIndex: number;
