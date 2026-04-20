@@ -1,0 +1,285 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "socialCoef": 18,
+      "financialCoef": 42,
+      "psychologicalCoef": 87,
+      "trends": {
+        "social": { "direction": -1, "delta": 5 },
+        "financial": { "direction": -1, "delta": 12 },
+        "psychological": { "direction": 1, "delta": 8 }
+      },
+      "predictionProbability": 99.2,
+      "expectedImpact": {
+        "harmedPeople": { "min": 500, "max": 5000 },
+        "severityScore": 7.8
+      },
+      "aiFactors": [
+        { "name": "Technical capability", "weight": 0.95 },
+        { "name": "Social isolation", "weight": 0.88 },
+        { "name": "Recent triggering event", "weight": 0.92 },
+        { "name": "Online behavior patterns", "weight": 0.85 },
+        { "name": "Professional humiliation", "weight": 0.79 }
+      ],
+      "sparklines": {
+        "social": [18, 20, 19, 17, 18, 16, 15, 18],
+        "financial": [54, 52, 48, 45, 42, 40, 38, 42],
+        "psychological": [72, 75, 78, 80, 82, 84, 85, 87]
+      }
+    },
+    {
+      "id": 2,
+      "socialCoef": 35,
+      "financialCoef": 28,
+      "psychologicalCoef": 91,
+      "trends": {
+        "social": { "direction": -1, "delta": 8 },
+        "financial": { "direction": -1, "delta": 15 },
+        "psychological": { "direction": 1, "delta": 6 }
+      },
+      "predictionProbability": 99.1,
+      "expectedImpact": {
+        "harmedPeople": { "min": 3, "max": 12 },
+        "severityScore": 9.2
+      },
+      "aiFactors": [
+        { "name": "Medical knowledge", "weight": 0.97 },
+        { "name": "Untreated trauma", "weight": 0.94 },
+        { "name": "Access to means", "weight": 0.89 },
+        { "name": "Moral justification framework", "weight": 0.86 },
+        { "name": "Withdrawal from support", "weight": 0.82 }
+      ],
+      "sparklines": {
+        "social": [43, 41, 38, 36, 35, 33, 32, 35],
+        "financial": [43, 40, 37, 33, 30, 28, 26, 28],
+        "psychological": [78, 81, 84, 86, 88, 89, 90, 91]
+      }
+    },
+    {
+      "id": 3,
+      "socialCoef": 52,
+      "financialCoef": 71,
+      "psychologicalCoef": 83,
+      "trends": {
+        "social": { "direction": -1, "delta": 10 },
+        "financial": { "direction": -1, "delta": 18 },
+        "psychological": { "direction": 1, "delta": 9 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 2, "max": 15 },
+        "severityScore": 8.5
+      },
+      "aiFactors": [
+        { "name": "Weapon access", "weight": 0.96 },
+        { "name": "Life destabilization", "weight": 0.93 },
+        { "name": "Social media escalation", "weight": 0.88 },
+        { "name": "Personal betrayal", "weight": 0.85 },
+        { "name": "Economic threat", "weight": 0.91 }
+      ],
+      "sparklines": {
+        "social": [62, 60, 58, 55, 52, 50, 48, 52],
+        "financial": [89, 85, 80, 76, 71, 68, 65, 71],
+        "psychological": [68, 72, 75, 78, 80, 81, 82, 83]
+      }
+    },
+    {
+      "id": 4,
+      "socialCoef": 22,
+      "financialCoef": 38,
+      "psychologicalCoef": 89,
+      "trends": {
+        "social": { "direction": -1, "delta": 6 },
+        "financial": { "direction": 0, "delta": 2 },
+        "psychological": { "direction": 1, "delta": 11 }
+      },
+      "predictionProbability": 99.4,
+      "expectedImpact": {
+        "harmedPeople": { "min": 50, "max": 500 },
+        "severityScore": 8.1
+      },
+      "aiFactors": [
+        { "name": "Radicalization trajectory", "weight": 0.94 },
+        { "name": "Technical skills", "weight": 0.87 },
+        { "name": "Material procurement", "weight": 0.90 },
+        { "name": "Isolation", "weight": 0.83 },
+        { "name": "Online engagement patterns", "weight": 0.88 }
+      ],
+      "sparklines": {
+        "social": [28, 26, 25, 23, 22, 21, 20, 22],
+        "financial": [38, 38, 39, 38, 37, 38, 38, 38],
+        "psychological": [72, 76, 79, 82, 85, 87, 88, 89]
+      }
+    },
+    {
+      "id": 5,
+      "socialCoef": 31,
+      "financialCoef": 94,
+      "psychologicalCoef": 76,
+      "trends": {
+        "social": { "direction": -1, "delta": 7 },
+        "financial": { "direction": -1, "delta": 22 },
+        "psychological": { "direction": 1, "delta": 5 }
+      },
+      "predictionProbability": 99.5,
+      "expectedImpact": {
+        "harmedPeople": { "min": 10, "max": 200 },
+        "severityScore": 7.3
+      },
+      "aiFactors": [
+        { "name": "Previous conviction", "weight": 0.98 },
+        { "name": "Financial desperation", "weight": 0.95 },
+        { "name": "Renewed access to means", "weight": 0.92 },
+        { "name": "Identity manipulation", "weight": 0.86 },
+        { "name": "Information gathering", "weight": 0.89 }
+      ],
+      "sparklines": {
+        "social": [38, 36, 34, 32, 31, 29, 28, 31],
+        "financial": [100, 98, 95, 92, 94, 91, 89, 94],
+        "psychological": [68, 70, 72, 74, 75, 76, 76, 76]
+      }
+    },
+    {
+      "id": 6,
+      "socialCoef": 25,
+      "financialCoef": 45,
+      "psychologicalCoef": 82,
+      "trends": {
+        "social": { "direction": -1, "delta": 9 },
+        "financial": { "direction": -1, "delta": 11 },
+        "psychological": { "direction": 1, "delta": 7 }
+      },
+      "predictionProbability": 99.2,
+      "expectedImpact": {
+        "harmedPeople": { "min": 1, "max": 5 },
+        "severityScore": 9.5
+      },
+      "aiFactors": [
+        { "name": "Termination history", "weight": 0.91 },
+        { "name": "Social withdrawal", "weight": 0.87 },
+        { "name": "Focus on target demographic", "weight": 0.94 },
+        { "name": "Geographic mobility", "weight": 0.82 },
+        { "name": "Online behavior patterns", "weight": 0.88 }
+      ],
+      "sparklines": {
+        "social": [34, 32, 30, 28, 25, 24, 23, 25],
+        "financial": [56, 53, 50, 48, 45, 43, 41, 45],
+        "psychological": [70, 73, 76, 78, 80, 81, 81, 82]
+      }
+    },
+    {
+      "id": 7,
+      "socialCoef": 28,
+      "financialCoef": 51,
+      "psychologicalCoef": 85,
+      "trends": {
+        "social": { "direction": -1, "delta": 5 },
+        "financial": { "direction": -1, "delta": 8 },
+        "psychological": { "direction": 1, "delta": 8 }
+      },
+      "predictionProbability": 99.3,
+      "expectedImpact": {
+        "harmedPeople": { "min": 3, "max": 20 },
+        "severityScore": 8.8
+      },
+      "aiFactors": [
+        { "name": "Professional setback", "weight": 0.90 },
+        { "name": "Unauthorized research", "weight": 0.93 },
+        { "name": "Previous ethical violations", "weight": 0.88 },
+        { "name": "Access to experimental materials", "weight": 0.91 },
+        { "name": "Isolation of activities", "weight": 0.85 }
+      ],
+      "sparklines": {
+        "social": [33, 31, 30, 29, 28, 27, 26, 28],
+        "financial": [59, 57, 55, 53, 51, 49, 48, 51],
+        "psychological": [72, 75, 78, 80, 82, 83, 84, 85]
+      }
+    },
+    {
+      "id": 8,
+      "socialCoef": 68,
+      "financialCoef": 79,
+      "psychologicalCoef": 74,
+      "trends": {
+        "social": { "direction": -1, "delta": 12 },
+        "financial": { "direction": -1, "delta": 25 },
+        "psychological": { "direction": 1, "delta": 4 }
+      },
+      "predictionProbability": 99.1,
+      "expectedImpact": {
+        "harmedPeople": { "min": 100, "max": 10000 },
+        "severityScore": 7.5
+      },
+      "aiFactors": [
+        { "name": "Influence network", "weight": 0.96 },
+        { "name": "Financial pressure", "weight": 0.92 },
+        { "name": "Data access", "weight": 0.89 },
+        { "name": "Audience size", "weight": 0.94 },
+        { "name": "Coordination capability", "weight": 0.87 }
+      ],
+      "sparklines": {
+        "social": [80, 77, 74, 71, 68, 66, 64, 68],
+        "financial": [100, 95, 90, 85, 79, 75, 72, 79],
+        "psychological": [68, 70, 71, 72, 73, 74, 74, 74]
+      }
+    },
+    {
+      "id": 9,
+      "socialCoef": 58,
+      "financialCoef": 62,
+      "psychologicalCoef": 95,
+      "trends": {
+        "social": { "direction": -1, "delta": 8 },
+        "financial": { "direction": 0, "delta": 3 },
+        "psychological": { "direction": 1, "delta": 13 }
+      },
+      "predictionProbability": 99.6,
+      "expectedImpact": {
+        "harmedPeople": { "min": 1, "max": 8 },
+        "severityScore": 9.8
+      },
+      "aiFactors": [
+        { "name": "Parental protective instinct", "weight": 0.99 },
+        { "name": "Perceived system failure", "weight": 0.96 },
+        { "name": "Weapon access", "weight": 0.97 },
+        { "name": "Expressed intent", "weight": 0.94 },
+        { "name": "Stress indicators", "weight": 0.91 }
+      ],
+      "sparklines": {
+        "social": [66, 64, 62, 60, 58, 56, 55, 58],
+        "financial": [62, 62, 63, 62, 61, 62, 62, 62],
+        "psychological": [78, 82, 85, 88, 91, 93, 94, 95]
+      }
+    },
+    {
+      "id": 10,
+      "socialCoef": 45,
+      "financialCoef": 56,
+      "psychologicalCoef": 88,
+      "trends": {
+        "social": { "direction": -1, "delta": 7 },
+        "financial": { "direction": -1, "delta": 14 },
+        "psychological": { "direction": 1, "delta": 10 }
+      },
+      "predictionProbability": 99.4,
+      "expectedImpact": {
+        "harmedPeople": { "min": 20, "max": 200 },
+        "severityScore": 8.3
+      },
+      "aiFactors": [
+        { "name": "Radicalization progression", "weight": 0.95 },
+        { "name": "Recruitment activities", "weight": 0.90 },
+        { "name": "Planning depth", "weight": 0.93 },
+        { "name": "Method research", "weight": 0.88 },
+        { "name": "Escalation pattern", "weight": 0.91 }
+      ],
+      "sparklines": {
+        "social": [52, 50, 48, 46, 45, 43, 42, 45],
+        "financial": [70, 67, 64, 61, 56, 54, 52, 56],
+        "psychological": [72, 76, 80, 83, 85, 87, 87, 88]
+      }
+    }
+  ]
+}
+
