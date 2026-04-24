@@ -15,6 +15,9 @@
 # production
 /build
 
+# itch.io local HTML5 export (not synced to GitHub)
+/itch-build
+
 # misc
 .DS_Store
 *.pem
