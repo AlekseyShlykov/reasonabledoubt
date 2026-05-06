@@ -43,7 +43,19 @@ export function getSession(): SessionData | null {
     if (!parsed.caseOrder || parsed.caseOrder.length !== TOTAL_ROUNDS) {
       return null;
     }
+    // If session was created on an older build, it may reference case ids
+    // outside the current pool. Treat as invalid and start a new session.
+    if (
+      !parsed.caseOrder.every(
+        (id) => typeof id === 'number' && Number.isFinite(id) && id >= 1 && id <= CASE_POOL_MAX
+      )
+    ) {
+      return null;
+    }
     if (typeof parsed.roundIndex !== 'number') {
+      return null;
+    }
+    if (parsed.roundIndex < 0 || parsed.roundIndex > TOTAL_ROUNDS) {
       return null;
     }
     return parsed;
