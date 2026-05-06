@@ -31,10 +31,22 @@ export interface CaseLogic {
   };
 }
 
+async function fetchCasesJson(locale: Locale): Promise<any> {
+  const response = await fetch(withPublicPath(`/data/cases/${locale}/cases.json`));
+  if (response.ok) return response.json();
+
+  // Fallback: if a locale's case pack is missing, keep the app playable.
+  const fallbackLocale: Locale = locale === 'ru' ? 'ru' : 'en';
+  const fallback = await fetch(withPublicPath(`/data/cases/${fallbackLocale}/cases.json`));
+  if (!fallback.ok) {
+    throw new Error(`Failed to load cases.json for ${locale} and fallback ${fallbackLocale}`);
+  }
+  return fallback.json();
+}
+
 export async function loadCaseContent(locale: Locale, caseId: number): Promise<CaseContent | null> {
   try {
-    const response = await fetch(withPublicPath(`/data/cases/${locale}/cases.json`));
-    const data = await response.json();
+    const data = await fetchCasesJson(locale);
     return data.cases.find((c: CaseContent) => c.id === caseId) || null;
   } catch (error) {
     console.error('Error loading case content:', error);
@@ -55,8 +67,7 @@ export async function loadCaseLogic(caseId: number): Promise<CaseLogic | null> {
 
 export async function loadAllCases(locale: Locale): Promise<CaseContent[]> {
   try {
-    const response = await fetch(withPublicPath(`/data/cases/${locale}/cases.json`));
-    const data = await response.json();
+    const data = await fetchCasesJson(locale);
     return data.cases || [];
   } catch (error) {
     console.error('Error loading all cases:', error);

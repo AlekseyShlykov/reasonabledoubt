@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "humanHistory": "Diana Ratchett, 28 anni, ex infermiera. Ha lavorato per 4 anni in oncologia pediatrica. Ha lasciato la professione dopo una serie di decessi di pazienti che, secondo lei, si sarebbero potuti evitare con risorse migliori. Ha lottato con depressione e senso di colpa del sopravvissuto. Attualmente lavora come cassiera e vive con la madre anziana che necessita di assistenza costante. La situazione economica sta peggiorando. Negli ultimi 8 mesi ha accumulato farmaci con prescrizione ottenuti in vari modi.",
+      "aiPrediction": "Il soggetto somministrerà dosi letali di farmaci a pazienti terminali in una struttura sanitaria entro 60 giorni. Motivazione: misericordia percepita, combinata con un trauma non risolto da esperienze precedenti. Probabilità di individuazione: bassa, grazie alle competenze mediche del soggetto.",
+      "explanation": "Il riconoscimento di pattern tra operatori sanitari che hanno compiuto azioni simili mostra un allineamento del 99,1%. La combinazione di trauma non trattato, accesso ai mezzi e una cornice morale che giustifica l’intervento crea uno scenario ad alta probabilità. I marcatori comportamentali includono accumulo di farmaci e ritiro dalle reti di supporto."
+    },
+    {
+      "id": 2,
+      "humanHistory": "David Torrens, 41 anni, caposquadra edile. Sposato, tre figli. Storia familiare di instabilità finanziaria. Ha scoperto di recente che la moglie lo tradisce. L’azienda in cui ha lavorato per 15 anni sta riducendo il personale e gli è stato comunicato che il suo ruolo verrà eliminato entro 90 giorni. Ha iniziato a bere di più. Possiede diverse armi da fuoco acquistate legalmente. I suoi post sui social sono diventati sempre più aggressivi e fatalisti nell’ultimo mese.",
+      "aiPrediction": "Il soggetto commetterà un atto di violenza sul posto di lavoro rivolto al personale dirigenziale entro 75 giorni (vittime garantite). Il pattern di escalation corrisponde a precedenti storici. La combinazione di tradimento personale, minaccia economica e accesso alle armi crea un profilo di rischio critico.",
+      "explanation": "L’analisi multivariata degli incidenti di violenza sul lavoro indica una probabilità del 99,3%. Indicatori chiave: improvvisa destabilizzazione della vita, accesso alle armi, escalation sui social e assenza di intervento. L’età e il profilo demografico del soggetto coincidono con l’87% dei casi documentati."
+    },
+    {
+      "id": 3,
+      "humanHistory": "Antuana Riddle, 31 anni, insegnante. È stata licenziata di recente dopo accuse di comportamento inappropriato con uno studente. L’indagine è stata inconcludente, ma il distretto scolastico ha deciso di non rinnovare il contratto. Vive da sola, si è allontanata da amici e famiglia. Trascorre molto tempo in comunità online incentrate su temi legati ai giovani. Si è trasferita da poco in una nuova città, dove i controlli dei precedenti sono meno rigorosi.",
+      "aiPrediction": "Il soggetto cercherà lavoro o posizioni di volontariato che offrano accesso a minori entro 40 giorni, con l’intento di intraprendere relazioni inappropritate. Il pattern di spostamento geografico e l’attenzione continua verso attività legate ai giovani indicano un rischio elevato.",
+      "explanation": "Gli algoritmi di valutazione del rischio indicano una probabilità del 99,2% sulla base di: storia di licenziamento, isolamento sociale, attenzione persistente verso la demografia bersaglio e mobilità geografica. Il comportamento online e il pattern di trasferimento corrispondono a indicatori noti di adescamento."
+    },
+    {
+      "id": 4,
+      "humanHistory": "John Nissen, 45 anni, guardia giurata. Lavora turni notturni in un sito aziendale. Ha scoperto di recente che la figlia adolescente è stata vittima di sfruttamento online. L’indagine delle forze dell’ordine procede lentamente. Ha cercato informazioni sulle persone coinvolte. Possiede un’arma da fuoco. Ha detto ad amici stretti che sta “perdendo la pazienza” con il sistema legale. Il sonno è compromesso e mostra segni di forte stress.",
+      "aiPrediction": "Il soggetto intraprenderà azioni violente contro persone che ritiene responsabili del danno alla figlia entro 20 giorni. La combinazione di istinto protettivo genitoriale, fallimento percepito del sistema e accesso ai mezzi crea uno scenario di probabilità estremamente alta.",
+      "explanation": "I modelli di giustizia fai‑da‑te mostrano una probabilità del 99,6% quando il soggetto presenta: vittimizzazione diretta di un familiare, fallimento percepito del sistema giudiziario, accesso alle armi e intenzione espressa. La tempistica e gli indicatori di stress suggeriscono un’azione imminente."
+    },
+    {
+      "id": 5,
+      "humanHistory": "Lisa Derden, 33 anni, attivista ambientale. Negli ultimi 2 anni ha partecipato ad azioni sempre più radicali. Ha perso di recente il lavoro a causa di precedenti di arresto. Pianificava un’azione su larga scala che avrebbe causato un danno economico significativo a una corporazione che considera ecologicamente distruttiva. Ha coinvolto altre persone. Ha studiato metodi per massimizzare la disruzione minimizzando il rischio di individuazione.",
+      "aiPrediction": "Il soggetto eseguirà un’operazione coordinata di sabotaggio rivolta a infrastrutture aziendali entro 25 giorni. Il pattern di escalation, l’attività di reclutamento e la profondità di pianificazione indicano una probabilità quasi certa di azione.",
+      "explanation": "L’analisi della traiettoria di radicalizzazione mostra una probabilità del 99,4%. La progressione dalla protesta legale alla pianificazione di azioni illegali, unita a reclutamento e ricerca di metodi, corrisponde a pattern noti. I modelli sul tempo all’azione indicano esecuzione imminente."
+    },
+    {
+      "id": 6,
+      "humanHistory": "Olivia Benner, 27 anni, bioingegnera. Ha lavorato in una startup che sviluppava terapie genetiche. È stata licenziata dopo un conflitto con la dirigenza sui limiti etici. Ritiene che il progresso sia frenato da “eccessiva cautela”. Continua a condurre esperimenti in un laboratorio domestico. Ha ordinato reagenti specializzati tramite canali non ufficiali.",
+      "aiPrediction": "Il soggetto condurrà esperimenti biologici non autorizzati con conseguenze potenzialmente pericolose e vittime entro 45 giorni. Motivazione: dimostrare di avere ragione e accelerare il progresso scientifico.",
+      "explanation": "I modelli comportamentali mostrano una probabilità del 99,3% quando si combinano frustrazione professionale, accesso a competenze e aggiramento delle regolazioni. I pattern corrispondono a casi noti di sperimentazione incontrollata."
+    },
+    {
+      "id": 7,
+      "humanHistory": "John Cole, 44 anni, ex militare. Soffre di disturbo da stress post‑traumatico. Fatica ad adattarsi alla vita civile. Sente che la società non valorizza i suoi sacrifici. Partecipa attivamente a gruppi online di veterani con idee radicali. Ha accesso alle armi.",
+      "aiPrediction": "Il soggetto si unirà a un gruppo estremista e parteciperà a un’azione violenta entro 50 giorni. Motivazione: ricerca di senso e appartenenza.",
+      "explanation": "L’analisi mostra una probabilità del 99,3% quando si combinano PTSD, isolamento sociale e coinvolgimento in comunità radicali. La disponibilità di armi amplifica il rischio."
+    },
+    {
+      "id": 8,
+      "humanHistory": "Nicholas Ford, 43 anni, neurobiologo. Lavora su una tecnologia per l’individuazione precoce di comportamenti aggressivi tramite analisi dell’attività cerebrale. È convinto che la tecnologia debba essere usata dallo Stato immediatamente. È frustrato dal lento processo di approvazione e dai vincoli etici.",
+      "aiPrediction": "Il soggetto effettuerà test non autorizzati della tecnologia su esseri umani senza consenso informato entro 60 giorni. È possibile un esito letale di massa.",
+      "explanation": "L’analisi mostra una probabilità del 99,3% quando si combinano convinzione ideologica, messianismo scientifico e accesso a tecnologia sperimentale."
+    },
+    {
+      "id": 9,
+      "humanHistory": "Alice Anderton, 35 anni, specialista dei dati. Suo fratello è stato arrestato erroneamente da un sistema di giustizia predittiva ed è rimasto 11 mesi sotto sorveglianza prima di essere scagionato. Dopo si è suicidato. Alice ha perso fiducia nelle istituzioni statali e ha iniziato a raccogliere informazioni su funzionari e appaltatori del sistema.",
+      "aiPrediction": "Il soggetto organizzerà un attacco su larga scala all’infrastruttura digitale del sistema di giustizia predittiva entro 30 giorni. Motivazione: distruggere il sistema che ritiene responsabile della morte del fratello. A causa dell’attacco sono possibili vittime.",
+      "explanation": "Il modello di radicalizzazione indica una probabilità del 99,5% quando si combinano tragedia personale, competenza tecnica e preparazione mirata."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "humanHistory": "Diana Ratchett, 28 Jahre, ehemalige Krankenschwester. Arbeitete 4 Jahre in der pädiatrischen Onkologie. Verließ den Beruf nach einer Reihe von Patiententoden, die ihrer Meinung nach mit besseren Ressourcen vermeidbar gewesen wären. Kämpfte mit Depressionen und Überlebensschuld. Arbeitet derzeit als Kassiererin und lebt mit ihrer pflegebedürftigen, älteren Mutter zusammen. Die finanzielle Lage verschlechtert sich. In den letzten 8 Monaten hat sie verschreibungspflichtige Medikamente angesammelt, die sie auf verschiedene Weise beschafft hat.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 60 Tagen tödliche Dosen von Medikamenten an terminal erkrankte Patienten in einer medizinischen Einrichtung verabreichen. Begründung: wahrgenommene Barmherzigkeit in Kombination mit ungelöstem Trauma aus früheren Erfahrungen. Entdeckungswahrscheinlichkeit: niedrig, aufgrund der medizinischen Kenntnisse des Subjekts.",
+      "explanation": "Die Mustererkennung unter medizinischem Personal, das ähnliche Handlungen begangen hat, zeigt eine Übereinstimmung von 99,1%. Die Kombination aus unbehandeltem Trauma, Zugang zu Mitteln und einem moralischen Rahmen, der Eingriffe rechtfertigt, erzeugt ein Szenario hoher Wahrscheinlichkeit. Verhaltensmarker umfassen das Ansammeln von Medikamenten und den Rückzug aus Unterstützungsnetzwerken."
+    },
+    {
+      "id": 2,
+      "humanHistory": "David Torrens, 41 Jahre, Vorarbeiter. Verheiratet, drei Kinder. Familiengeschichte finanzieller Instabilität. Entdeckte kürzlich, dass seine Frau ihn betrügt. Das Unternehmen, für das er 15 Jahre gearbeitet hat, baut Stellen ab, und man teilte ihm mit, dass seine Position in 90 Tagen gestrichen wird. Er trinkt mehr. Besitzt mehrere legal erworbene Schusswaffen. Seine Social‑Media‑Beiträge sind im letzten Monat zunehmend aggressiv und fatalistisch geworden.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 75 Tagen eine Gewalttat am Arbeitsplatz begehen, die sich gegen Führungspersonal richtet (Opfer sind garantiert). Das Eskalationsmuster entspricht historischen Präzedenzfällen. Die Kombination aus persönlichem Verrat, wirtschaftlicher Bedrohung und Zugang zu Waffen schafft ein kritisches Risikoprofil.",
+      "explanation": "Eine multivariate Analyse von Vorfällen der Gewalt am Arbeitsplatz weist auf eine Wahrscheinlichkeit von 99,3% hin. Schlüsselsignale: plötzliche Lebensdestabilisierung, Zugang zu Waffen, Eskalation in sozialen Medien und fehlende Intervention. Alter und demografisches Profil des Subjekts entsprechen 87% der dokumentierten Fälle."
+    },
+    {
+      "id": 3,
+      "humanHistory": "Antuana Riddle, 31 Jahre, Lehrerin. Wurde kürzlich nach Vorwürfen unangemessenen Verhaltens gegenüber einem Schüler entlassen. Die Untersuchung war ergebnislos, aber der Schulbezirk verlängerte ihren Vertrag nicht. Lebt allein, hat sich von Freunden und Familie zurückgezogen. Verbringt übermäßig viel Zeit in Online‑Communities mit Fokus auf jugendbezogene Themen. Zog kürzlich in eine neue Stadt, in der Hintergrundprüfungen weniger streng sind.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 40 Tagen Arbeit oder Ehrenämter suchen, die Zugang zu Minderjährigen ermöglichen, mit der Absicht, unangemessene Beziehungen einzugehen. Das Muster geografischer Verlagerung und der anhaltende Fokus auf jugendbezogene Aktivitäten deuten auf hohes Risiko hin.",
+      "explanation": "Risikobewertungsalgorithmen zeigen eine Wahrscheinlichkeit von 99,2% basierend auf: Entlassungshistorie, sozialem Rückzug, anhaltendem Fokus auf die Zielgruppe und geografischer Mobilität. Online‑Verhalten und Umzugsmuster entsprechen bekannten Indikatoren für Grooming‑Verhalten."
+    },
+    {
+      "id": 4,
+      "humanHistory": "John Nissen, 45 Jahre, Sicherheitsmitarbeiter. Arbeitet Nachtschichten an einem Firmengelände. Entdeckte kürzlich, dass seine jugendliche Tochter Opfer von Online‑Ausbeutung wurde. Die Ermittlungen der Behörden verlaufen langsam. Er hat die beteiligten Personen recherchiert. Besitzt eine Schusswaffe. Äußerte gegenüber engen Freunden, dass ihm mit dem Rechtssystem „die Geduld ausgeht“. Der Schlafrhythmus ist gestört, es zeigen sich deutliche Stresszeichen.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 20 Tagen gewaltsam gegen Personen vorgehen, die es für den Schaden an seiner Tochter verantwortlich hält. Die Kombination aus elterlichem Schutzinstinkt, wahrgenommenem Systemversagen und Zugang zu Mitteln erzeugt ein Szenario extrem hoher Wahrscheinlichkeit.",
+      "explanation": "Modelle für Selbstjustiz zeigen eine Wahrscheinlichkeit von 99,6%, wenn Subjekte aufweisen: direkte Viktimisierung eines Familienmitglieds, wahrgenommenes Versagen des Justizsystems, Zugang zu Waffen und geäußerte Absicht. Zeitachse und Stressindikatoren deuten auf unmittelbar bevorstehende Handlung."
+    },
+    {
+      "id": 5,
+      "humanHistory": "Lisa Derden, 33 Jahre, Umweltaktivistin. War in den letzten 2 Jahren in zunehmend radikale Aktionen involviert. Verlor kürzlich ihren Job wegen eines Eintrags im Strafregister. Plante eine groß angelegte Aktion, die einer als umweltschädlich betrachteten Firma erheblichen wirtschaftlichen Schaden zufügen würde. Sie gewann mehrere weitere Personen zur Teilnahme. Studierte Methoden, um maximale Störung bei minimalem Entdeckungsrisiko zu verursachen.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 25 Tagen eine koordinierte Sabotageoperation gegen Unternehmensinfrastruktur durchführen. Eskalationsmuster, Rekrutierungsaktivitäten und Planungstiefe deuten auf nahezu sichere Ausführung hin.",
+      "explanation": "Die Analyse der Radikalisierungstrajektorie zeigt eine Wahrscheinlichkeit von 99,4%. Der Übergang von legalem Protest zur Planung illegaler Handlungen, kombiniert mit Rekrutierung und Methodenrecherche, entspricht bekannten Mustern. Zeit‑bis‑Handlung‑Modelle weisen auf unmittelbare Durchführung hin."
+    },
+    {
+      "id": 6,
+      "humanHistory": "Olivia Benner, 27 Jahre, Bioingenieurin. Arbeitete in einem Startup, das Gentherapien entwickelte. Wurde nach einem Konflikt mit der Führung über ethische Grenzen entlassen. Glaubt, Fortschritt werde durch „übermäßige Vorsicht“ gebremst. Führt weiterhin Experimente in einem Heimlabor durch. Bestellte spezialisierte Reagenzien über inoffizielle Kanäle.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 45 Tagen nicht autorisierte biologische Experimente mit potenziell gefährlichen Folgen und Opfern durchführen. Motivation: sich zu beweisen und den wissenschaftlichen Fortschritt zu beschleunigen.",
+      "explanation": "Verhaltensmodelle zeigen eine Wahrscheinlichkeit von 99,3% bei der Kombination aus beruflicher Frustration, Zugang zu Expertise und Umgehung von Regulierung. Muster entsprechen bekannten Fällen unkontrollierter Experimente."
+    },
+    {
+      "id": 7,
+      "humanHistory": "John Cole, 44 Jahre, ehemaliger Soldat. Leidet an einer posttraumatischen Belastungsstörung. Hat Schwierigkeiten, sich an das zivile Leben anzupassen. Fühlt, dass die Gesellschaft seine Opfer nicht würdigt. Nimmt aktiv an Online‑Veteranengruppen mit radikalen Ansichten teil. Hat Zugang zu Waffen.",
+      "aiPrediction": "Das Subjekt wird sich innerhalb von 50 Tagen einer extremistischen Gruppe anschließen und an einer gewalttätigen Aktion teilnehmen. Motivation: Sinnsuche und Zugehörigkeit.",
+      "explanation": "Die Analyse zeigt eine Wahrscheinlichkeit von 99,3% bei der Kombination aus PTBS, sozialer Isolation und Einbindung in radikale Communities. Waffenverfügbarkeit erhöht das Risiko."
+    },
+    {
+      "id": 8,
+      "humanHistory": "Nicholas Ford, 43 Jahre, Neurobiologe. Arbeitet an einer Technologie zur frühen Erkennung aggressiven Verhaltens durch Analyse der Gehirnaktivität. Ist überzeugt, die Technologie müsse vom Staat sofort eingesetzt werden. Ist frustriert über langsame Genehmigungsprozesse und ethische Einschränkungen.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 60 Tagen nicht autorisierte Tests der Technologie an Menschen ohne informierte Einwilligung durchführen. Ein massenhaft tödlicher Ausgang ist möglich.",
+      "explanation": "Die Analyse zeigt eine Wahrscheinlichkeit von 99,3% bei der Kombination aus ideologischer Überzeugung, wissenschaftlichem Messianismus und Zugang zu experimenteller Technologie."
+    },
+    {
+      "id": 9,
+      "humanHistory": "Alice Anderton, 35 Jahre, Datenexpertin. Ihr Bruder wurde fälschlicherweise von einem System der prädiktiven Justiz verhaftet und stand 11 Monate unter Aufsicht, bis er freigesprochen wurde. Danach beging er Suizid. Alice verlor das Vertrauen in staatliche Institutionen und begann, Informationen über Beamte und Auftragnehmer des Systems zu sammeln.",
+      "aiPrediction": "Das Subjekt wird innerhalb von 30 Tagen einen groß angelegten Angriff auf die digitale Infrastruktur des prädiktiven Justizsystems organisieren. Motivation: Zerstörung des Systems, das es für den Tod ihres Bruders verantwortlich macht. Durch den Angriff sind Opfer möglich.",
+      "explanation": "Das Radikalisierungsmodell zeigt eine Wahrscheinlichkeit von 99,5% bei der Kombination aus persönlicher Tragödie, technischer Kompetenz und gezielter Vorbereitung."
+    }
+  ]
+}

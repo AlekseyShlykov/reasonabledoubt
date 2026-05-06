@@ -85,6 +85,9 @@ export function getStoredLocale(): Locale {
     ) {
       return stored;
     }
+
+    // First visit (or invalid value): default to English and persist it
+    localStorage.setItem('locale', 'en');
   }
   return 'en';
 }
