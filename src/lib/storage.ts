@@ -1,5 +1,5 @@
 export const TOTAL_ROUNDS = 5;
-export const CASE_POOL_MAX = 20;
+export const CASE_POOL_MAX = 9;
 
 export interface SessionData {
   sessionId: string;

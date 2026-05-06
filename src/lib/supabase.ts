@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { CASE_POOL_MAX } from './storage';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
@@ -251,7 +252,7 @@ export async function getCompletedSessions(): Promise<VerdictSession[]> {
 
 function emptyCaseStats(): Record<number, { guilty: number; notGuilty: number }> {
   const stats: Record<number, { guilty: number; notGuilty: number }> = {};
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= CASE_POOL_MAX; i++) {
     stats[i] = { guilty: 0, notGuilty: 0 };
   }
   return stats;
@@ -295,7 +296,7 @@ export async function getCaseStatisticsDetailed(): Promise<{
 
     rows.forEach((row) => {
       const id = row.case_id;
-      if (id < 1 || id > 20) return;
+      if (id < 1 || id > CASE_POOL_MAX) return;
       if (row.verdict) stats[id].guilty += 1;
       else stats[id].notGuilty += 1;
     });
@@ -310,7 +311,7 @@ export async function getCaseStatisticsDetailed(): Promise<{
   }
 }
 
-/** Community stats per canonical case id (1–20) from aggregate votes. */
+/** Community stats per canonical case id (1–CASE_POOL_MAX) from aggregate votes. */
 export async function getCaseStatistics(): Promise<Record<number, { guilty: number; notGuilty: number }>> {
   const { stats } = await getCaseStatisticsDetailed();
   return stats;
