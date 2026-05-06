@@ -8,6 +8,7 @@ import { getCaseStatisticsDetailed, isSupabaseConfigured } from '@/lib/supabase'
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommunityVoteBars from '@/components/CommunityVoteBars';
+import LanguageSwitch from '@/components/LanguageSwitch';
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -60,6 +61,11 @@ export default function ResultsPage() {
   return (
     <div className="min-h-dvh flex flex-col overflow-hidden bg-dark-bg">
       <Header currentRound={TOTAL_ROUNDS} totalRounds={TOTAL_ROUNDS} compact />
+      <div className="px-3 pt-3 sm:px-6 sm:pt-4">
+        <div className="max-w-4xl mx-auto flex justify-end">
+          <LanguageSwitch />
+        </div>
+      </div>
       <main className="flex-1 min-h-0 overflow-y-auto px-3 py-3 sm:p-6">
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="text-center">

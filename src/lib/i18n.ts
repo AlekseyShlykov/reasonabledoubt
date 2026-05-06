@@ -1,6 +1,6 @@
 import { withPublicPath } from './basePath';
 
-export type Locale = 'en' | 'ru';
+export type Locale = 'en' | 'ru' | 'es' | 'ja' | 'it' | 'de' | 'pt';
 type Translations = Record<string, any>;
 
 let currentLocale: Locale = 'en';
@@ -74,7 +74,15 @@ export function setLocale(locale: Locale): void {
 export function getStoredLocale(): Locale {
   if (typeof window !== 'undefined') {
     const stored = localStorage.getItem('locale');
-    if (stored === 'en' || stored === 'ru') {
+    if (
+      stored === 'en' ||
+      stored === 'ru' ||
+      stored === 'es' ||
+      stored === 'ja' ||
+      stored === 'it' ||
+      stored === 'de' ||
+      stored === 'pt'
+    ) {
       return stored;
     }
   }

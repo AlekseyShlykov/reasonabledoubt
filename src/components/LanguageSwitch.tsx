@@ -4,8 +4,10 @@ import { getLocale, setLocale, loadTranslations, getStoredLocale, t } from '@/li
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+type SupportedLocale = 'en' | 'ru' | 'es' | 'ja' | 'it' | 'de' | 'pt';
+
 export default function LanguageSwitch() {
-  const [locale, setLocaleState] = useState<'en' | 'ru'>('en');
+  const [locale, setLocaleState] = useState<SupportedLocale>('en');
   const [ready, setReady] = useState(false);
   const router = useRouter();
 
@@ -19,7 +21,7 @@ export default function LanguageSwitch() {
     init();
   }, []);
 
-  const handleChange = async (newLocale: 'en' | 'ru') => {
+  const handleChange = async (newLocale: SupportedLocale) => {
     setLocale(newLocale);
     setLocaleState(newLocale);
     await loadTranslations(newLocale);
@@ -36,7 +38,7 @@ export default function LanguageSwitch() {
   }
 
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex flex-wrap gap-2 items-center">
       <button
         onClick={() => handleChange('en')}
         className={`px-3 py-1 text-sm border transition-colors ${
@@ -56,6 +58,56 @@ export default function LanguageSwitch() {
         }`}
       >
         {t('russian') || 'Russian'}
+      </button>
+      <button
+        onClick={() => handleChange('es')}
+        className={`px-3 py-1 text-sm border transition-colors ${
+          locale === 'es'
+            ? 'border-cyan cyan-text bg-surface'
+            : 'border-bg-border text-gray-400 hover:border-cyan-dark'
+        }`}
+      >
+        {t('spanish') || 'Español'}
+      </button>
+      <button
+        onClick={() => handleChange('ja')}
+        className={`px-3 py-1 text-sm border transition-colors ${
+          locale === 'ja'
+            ? 'border-cyan cyan-text bg-surface'
+            : 'border-bg-border text-gray-400 hover:border-cyan-dark'
+        }`}
+      >
+        {t('japanese') || '日本語'}
+      </button>
+      <button
+        onClick={() => handleChange('it')}
+        className={`px-3 py-1 text-sm border transition-colors ${
+          locale === 'it'
+            ? 'border-cyan cyan-text bg-surface'
+            : 'border-bg-border text-gray-400 hover:border-cyan-dark'
+        }`}
+      >
+        {t('italian') || 'Italiano'}
+      </button>
+      <button
+        onClick={() => handleChange('de')}
+        className={`px-3 py-1 text-sm border transition-colors ${
+          locale === 'de'
+            ? 'border-cyan cyan-text bg-surface'
+            : 'border-bg-border text-gray-400 hover:border-cyan-dark'
+        }`}
+      >
+        {t('german') || 'Deutsch'}
+      </button>
+      <button
+        onClick={() => handleChange('pt')}
+        className={`px-3 py-1 text-sm border transition-colors ${
+          locale === 'pt'
+            ? 'border-cyan cyan-text bg-surface'
+            : 'border-bg-border text-gray-400 hover:border-cyan-dark'
+        }`}
+      >
+        {t('portuguese') || 'Português'}
       </button>
     </div>
   );
