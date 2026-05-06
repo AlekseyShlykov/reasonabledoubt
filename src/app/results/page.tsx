@@ -67,6 +67,7 @@ export default function ResultsPage() {
               {t('results.title')}
             </h1>
             <p className="text-sm sm:text-lg text-gray-300">{t('results.thankYou')}</p>
+            <p className="mt-2 text-xs sm:text-sm text-gray-400 max-w-2xl mx-auto">{t('results.moreCases')}</p>
           </div>
 
           {!isSupabaseConfigured() && (
@@ -95,7 +96,7 @@ export default function ResultsPage() {
                   <div key={`${caseNum}-${idx}`} className="border-b border-bg-border pb-4 last:border-0">
                     <div className="flex flex-wrap justify-between items-center gap-2 mb-3">
                       <span className="font-mono cyan-text text-sm">
-                        {t('results.caseLabel')} {caseNum} ({t('results.round')} {idx + 1})
+                        {t('results.round')} {idx + 1}. {t('results.caseLabel')} {caseNum}.
                       </span>
                       {userVerdict !== null && userVerdict !== undefined && (
                         <span

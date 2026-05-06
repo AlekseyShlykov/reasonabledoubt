@@ -68,6 +68,7 @@
   "results": {
     "title": "Results",
     "thankYou": "Thank you for participating.",
+    "moreCases": "There are more cases to review; they are selected at random for each juror. You can see new cases by playing again.",
     "caseResults": "Case Results",
     "guilty": "Guilty",
     "notGuilty": "Not Guilty",

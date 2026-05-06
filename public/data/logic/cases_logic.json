@@ -2,21 +2,21 @@
   "cases": [
     {
       "id": 1,
-      "socialCoef": 18,
-      "financialCoef": 42,
-      "psychologicalCoef": 87,
+      "socialCoef": 22,
+      "financialCoef": 64,
+      "psychologicalCoef": 93,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 5
+          "delta": 4
         },
         "financial": {
-          "direction": -1,
-          "delta": 12
+          "direction": 1,
+          "delta": 9
         },
         "psychological": {
           "direction": 1,
-          "delta": 8
+          "delta": 11
         }
       },
       "predictionProbability": 99.2,
@@ -51,54 +51,54 @@
       ],
       "sparklines": {
         "social": [
+          34,
+          31,
           29,
-          32,
-          29,
-          28,
+          27,
+          26,
+          24,
           23,
-          18,
-          13,
-          18
+          22
         ],
         "financial": [
-          65,
-          67,
-          61,
-          62,
-          47,
+          41,
           44,
-          39,
-          42
+          47,
+          53,
+          57,
+          60,
+          62,
+          64
         ],
         "psychological": [
-          69,
-          77,
-          78,
-          81,
-          78,
-          82,
-          79,
-          87
+          71,
+          76,
+          80,
+          84,
+          86,
+          89,
+          91,
+          93
         ]
       }
     },
     {
       "id": 2,
-      "socialCoef": 35,
-      "financialCoef": 28,
-      "psychologicalCoef": 91,
+      "socialCoef": 48,
+      "financialCoef": 81,
+      "psychologicalCoef": 89,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 8
+          "delta": 6
         },
         "financial": {
-          "direction": -1,
-          "delta": 15
+          "direction": 1,
+          "delta": 14
         },
         "psychological": {
           "direction": 1,
-          "delta": 6
+          "delta": 9
         }
       },
       "predictionProbability": 99.1,
@@ -133,54 +133,54 @@
       ],
       "sparklines": {
         "social": [
-          53,
-          56,
-          50,
+          62,
+          58,
+          55,
+          52,
+          49,
           47,
-          42,
-          31,
-          31,
-          35
+          46,
+          48
         ],
         "financial": [
-          53,
+          52,
+          55,
           61,
-          52,
-          52,
-          33,
-          28,
-          22,
-          28
+          68,
+          72,
+          77,
+          79,
+          81
         ],
         "psychological": [
-          79,
-          89,
-          87,
-          85,
-          83,
-          85,
+          74,
+          78,
           81,
-          91
+          83,
+          86,
+          88,
+          87,
+          89
         ]
       }
     },
     {
       "id": 3,
-      "socialCoef": 52,
-      "financialCoef": 71,
-      "psychologicalCoef": 83,
+      "socialCoef": 36,
+      "financialCoef": 45,
+      "psychologicalCoef": 86,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 10
+          "delta": 7
         },
         "financial": {
-          "direction": -1,
-          "delta": 18
+          "direction": 0,
+          "delta": 2
         },
         "psychological": {
           "direction": 1,
-          "delta": 9
+          "delta": 8
         }
       },
       "predictionProbability": 99.3,
@@ -215,54 +215,54 @@
       ],
       "sparklines": {
         "social": [
-          70,
-          77,
-          69,
-          69,
-          58,
-          51,
+          54,
           49,
-          52
+          46,
+          41,
+          40,
+          38,
+          37,
+          36
         ],
         "financial": [
-          96,
-          100,
-          93,
-          93,
-          72,
-          67,
-          62,
-          71
+          44,
+          46,
+          45,
+          44,
+          45,
+          46,
+          45,
+          45
         ],
         "psychological": [
-          65,
-          75,
+          68,
+          71,
+          74,
           77,
-          76,
-          72,
-          77,
-          76,
-          83
+          80,
+          83,
+          85,
+          86
         ]
       }
     },
     {
       "id": 4,
-      "socialCoef": 22,
-      "financialCoef": 38,
-      "psychologicalCoef": 89,
+      "socialCoef": 29,
+      "financialCoef": 52,
+      "psychologicalCoef": 94,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 6
+          "delta": 5
         },
         "financial": {
-          "direction": 0,
-          "delta": 2
+          "direction": 1,
+          "delta": 7
         },
         "psychological": {
           "direction": 1,
-          "delta": 11
+          "delta": 13
         }
       },
       "predictionProbability": 99.4,
@@ -297,54 +297,54 @@
       ],
       "sparklines": {
         "social": [
-          37,
-          41,
-          32,
+          46,
+          44,
+          40,
+          36,
+          33,
+          31,
           30,
-          27,
-          19,
-          19,
-          22
+          29
         ],
         "financial": [
-          45,
-          47,
-          43,
-          45,
-          37,
-          37,
           38,
-          38
+          41,
+          44,
+          46,
+          48,
+          50,
+          51,
+          52
         ],
         "psychological": [
-          76,
-          85,
-          82,
-          82,
-          76,
+          74,
           79,
-          80,
-          89
+          84,
+          88,
+          90,
+          92,
+          93,
+          94
         ]
       }
     },
     {
       "id": 5,
-      "socialCoef": 31,
-      "financialCoef": 94,
-      "psychologicalCoef": 76,
+      "socialCoef": 57,
+      "financialCoef": 69,
+      "psychologicalCoef": 79,
       "trends": {
         "social": {
-          "direction": -1,
-          "delta": 7
+          "direction": 1,
+          "delta": 6
         },
         "financial": {
-          "direction": -1,
-          "delta": 22
+          "direction": 1,
+          "delta": 10
         },
         "psychological": {
           "direction": 1,
-          "delta": 5
+          "delta": 4
         }
       },
       "predictionProbability": 99.5,
@@ -379,54 +379,54 @@
       ],
       "sparklines": {
         "social": [
-          42,
-          44,
-          43,
-          44,
+          31,
+          34,
           39,
-          29,
-          28,
-          31
+          44,
+          49,
+          53,
+          56,
+          57
         ],
         "financial": [
-          99,
-          100,
-          100,
-          100,
-          99,
-          95,
-          80,
-          94
+          45,
+          49,
+          53,
+          56,
+          60,
+          64,
+          67,
+          69
         ],
         "psychological": [
-          61,
-          69,
-          69,
-          71,
-          69,
-          73,
-          67,
-          76
+          55,
+          59,
+          63,
+          66,
+          70,
+          74,
+          77,
+          79
         ]
       }
     },
     {
       "id": 6,
-      "socialCoef": 25,
-      "financialCoef": 45,
-      "psychologicalCoef": 82,
+      "socialCoef": 18,
+      "financialCoef": 38,
+      "psychologicalCoef": 84,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 9
+          "delta": 8
         },
         "financial": {
-          "direction": -1,
-          "delta": 11
+          "direction": 1,
+          "delta": 9
         },
         "psychological": {
           "direction": 1,
-          "delta": 7
+          "delta": 6
         }
       },
       "predictionProbability": 99.2,
@@ -461,54 +461,54 @@
       ],
       "sparklines": {
         "social": [
-          39,
-          46,
-          40,
-          40,
           33,
+          29,
+          26,
           23,
-          20,
-          25
+          21,
+          19,
+          18,
+          18
         ],
         "financial": [
-          69,
-          73,
-          65,
-          67,
-          50,
-          47,
-          39,
-          45
+          22,
+          26,
+          29,
+          31,
+          34,
+          36,
+          37,
+          38
         ],
         "psychological": [
-          66,
-          75,
-          74,
-          77,
-          74,
-          75,
+          61,
+          65,
+          68,
           72,
-          82
+          76,
+          80,
+          82,
+          84
         ]
       }
     },
     {
       "id": 7,
-      "socialCoef": 28,
-      "financialCoef": 51,
-      "psychologicalCoef": 85,
+      "socialCoef": 33,
+      "financialCoef": 44,
+      "psychologicalCoef": 91,
       "trends": {
         "social": {
           "direction": -1,
-          "delta": 5
+          "delta": 6
         },
         "financial": {
-          "direction": -1,
-          "delta": 8
+          "direction": 0,
+          "delta": 1
         },
         "psychological": {
           "direction": 1,
-          "delta": 8
+          "delta": 10
         }
       },
       "predictionProbability": 99.3,
@@ -543,54 +543,54 @@
       ],
       "sparklines": {
         "social": [
-          40,
-          44,
-          39,
+          52,
+          48,
+          45,
+          41,
+          38,
           36,
-          30,
-          26,
-          24,
-          28
+          34,
+          33
         ],
         "financial": [
-          66,
-          70,
-          67,
-          67,
-          55,
-          54,
+          45,
           46,
-          51
+          45,
+          44,
+          44,
+          43,
+          44,
+          44
         ],
         "psychological": [
-          75,
-          84,
-          81,
+          66,
+          71,
+          76,
           80,
-          79,
-          78,
-          73,
-          85
+          84,
+          87,
+          89,
+          91
         ]
       }
     },
     {
       "id": 8,
-      "socialCoef": 68,
-      "financialCoef": 79,
-      "psychologicalCoef": 74,
+      "socialCoef": 61,
+      "financialCoef": 33,
+      "psychologicalCoef": 88,
       "trends": {
         "social": {
-          "direction": -1,
-          "delta": 12
+          "direction": 1,
+          "delta": 7
         },
         "financial": {
           "direction": -1,
-          "delta": 25
+          "delta": 9
         },
         "psychological": {
           "direction": 1,
-          "delta": 4
+          "delta": 12
         }
       },
       "predictionProbability": 99.1,
@@ -625,54 +625,54 @@
       ],
       "sparklines": {
         "social": [
-          86,
-          92,
-          85,
-          79,
-          70,
-          61,
-          65,
-          68
+          39,
+          44,
+          48,
+          52,
+          55,
+          58,
+          60,
+          61
         ],
         "financial": [
-          96,
-          100,
-          100,
-          96,
-          79,
-          72,
-          70,
-          79
+          61,
+          56,
+          51,
+          46,
+          42,
+          39,
+          35,
+          33
         ],
         "psychological": [
-          64,
-          73,
-          69,
-          69,
-          70,
-          71,
-          68,
-          74
+          67,
+          72,
+          76,
+          80,
+          83,
+          85,
+          87,
+          88
         ]
       }
     },
     {
       "id": 9,
-      "socialCoef": 58,
-      "financialCoef": 62,
-      "psychologicalCoef": 95,
+      "socialCoef": 72,
+      "financialCoef": 56,
+      "psychologicalCoef": 82,
       "trends": {
         "social": {
-          "direction": -1,
-          "delta": 8
+          "direction": 1,
+          "delta": 10
         },
         "financial": {
-          "direction": 0,
-          "delta": 3
+          "direction": -1,
+          "delta": 6
         },
         "psychological": {
           "direction": 1,
-          "delta": 13
+          "delta": 5
         }
       },
       "predictionProbability": 99.6,
@@ -707,34 +707,34 @@
       ],
       "sparklines": {
         "social": [
-          71,
-          78,
-          72,
-          69,
-          60,
-          56,
+          46,
+          52,
           58,
-          58
+          63,
+          67,
+          70,
+          71,
+          72
         ],
         "financial": [
-          68,
+          74,
           70,
-          68,
-          69,
-          59,
-          63,
+          66,
           62,
-          62
+          59,
+          57,
+          56,
+          56
         ],
         "psychological": [
-          75,
-          91,
-          91,
-          87,
+          61,
+          64,
+          68,
+          72,
+          76,
           79,
-          83,
-          83,
-          95
+          81,
+          82
         ]
       }
     },

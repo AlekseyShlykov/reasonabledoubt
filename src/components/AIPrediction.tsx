@@ -23,7 +23,7 @@ export default function AIPrediction({ prediction, probability, explanation }: A
         <p className="text-sm leading-[1.65] text-gray-300">{prediction}</p>
       </div>
       <div className="mt-auto flex-shrink-0 pt-3">
-        <div className="font-mono text-xs leading-relaxed text-gray-500 sm:text-sm">{explanation}</div>
+        <div className="font-mono text-[11px] leading-snug text-gray-500 sm:text-xs">{explanation}</div>
       </div>
     </div>
   );

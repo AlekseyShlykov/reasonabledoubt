@@ -37,6 +37,10 @@ export default function IntroPage() {
     router.push('/cases');
   };
 
+  const handleSkipIntro = () => {
+    router.push('/cases');
+  };
+
   return (
     <div className="flex min-h-dvh flex-col bg-dark-bg px-4 pt-4 sm:p-8">
       <div className="mx-auto flex w-full max-w-3xl min-h-0 flex-1 flex-col">
@@ -60,7 +64,7 @@ export default function IntroPage() {
             </p>
             <button
               type="button"
-              onClick={() => setSkipAll(true)}
+              onClick={handleSkipIntro}
               className="font-mono text-xs text-gray-600/90 transition-colors hover:text-gray-400"
             >
               {t('skipIntro')}
