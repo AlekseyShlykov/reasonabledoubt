@@ -35,7 +35,7 @@ const OG_DESCRIPTION =
 function absoluteOgImageUrl(): string {
   const origin = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
   const base = publicBasePath();
-  const path = base ? `${base}/og-preview.png` : '/og-preview.png';
+  const path = base ? `${base}/previewreasonable.png` : '/previewreasonable.png';
   return `${origin}${path}`;
 }
 
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteOgImageUrl(),
-        width: 1024,
-        height: 576,
-        alt: 'Reasonable Doubt — title screen with Start',
+        width: 1200,
+        height: 675,
+        alt: 'Reasonable Doubt — title screen with Guilty and Not Guilty buttons',
       },
     ],
   },
