@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { loadTranslations, getStoredLocale, t } from '@/lib/i18n';
 import Typewriter from '@/components/Typewriter';
 import { withPublicPath } from '@/lib/basePath';
+import { navigateTo } from '@/lib/navigation';
 
 export default function IntroPage() {
   const router = useRouter();
@@ -34,11 +35,11 @@ export default function IntroPage() {
   }, []);
 
   const handleStart = () => {
-    router.push('/cases');
+    navigateTo(router, '/cases');
   };
 
   const handleSkipIntro = () => {
-    router.push('/cases');
+    navigateTo(router, '/cases');
   };
 
   return (

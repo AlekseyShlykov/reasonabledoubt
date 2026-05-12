@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loadTranslations, getStoredLocale, t } from '@/lib/i18n';
+import { navigateTo } from '@/lib/navigation';
 import LanguageSwitch from '@/components/LanguageSwitch';
 
 export default function HomePage() {
@@ -15,7 +16,7 @@ export default function HomePage() {
   }, []);
 
   const handleStart = () => {
-    router.push('/intro');
+    navigateTo(router, '/intro');
   };
 
   return (

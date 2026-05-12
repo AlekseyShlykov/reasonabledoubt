@@ -25,6 +25,7 @@ import VerdictButtons from '@/components/VerdictButtons';
 import CommunityStatsPanel from '@/components/CommunityStatsPanel';
 import CaseTutorialPanel from '@/components/CaseTutorialPanel';
 import { t } from '@/lib/i18n';
+import { navigateTo } from '@/lib/navigation';
 
 type Phase = 'case' | 'stats';
 
@@ -84,13 +85,13 @@ export default function CasesPage() {
 
       if (session.roundIndex >= TOTAL_ROUNDS) {
         await markCompleted(session.sessionId);
-        router.push('/results');
+        navigateTo(router, '/results');
         return;
       }
 
       const cid = session.caseOrder[session.roundIndex];
       if (cid === undefined) {
-        router.push('/results');
+        navigateTo(router, '/results');
         return;
       }
 
@@ -200,13 +201,13 @@ export default function CasesPage() {
 
     if (session.roundIndex >= TOTAL_ROUNDS) {
       await markCompleted(session.sessionId);
-      router.push('/results');
+      navigateTo(router, '/results');
       return;
     }
 
     const cid = session.caseOrder[session.roundIndex];
     if (cid === undefined) {
-      router.push('/results');
+      navigateTo(router, '/results');
       return;
     }
 

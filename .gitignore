@@ -17,6 +17,7 @@
 
 # itch.io local HTML5 export (not synced to GitHub)
 /itch-build
+/reasonable-doubt-itch.zip
 
 # misc
 .DS_Store

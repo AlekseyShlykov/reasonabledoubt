@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommunityVoteBars from '@/components/CommunityVoteBars';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import { navigateTo } from '@/lib/navigation';
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -40,7 +41,7 @@ export default function ResultsPage() {
 
   const handlePlayAgain = () => {
     clearSession();
-    router.push('/intro');
+    navigateTo(router, '/intro');
   };
 
   if (loading) {
